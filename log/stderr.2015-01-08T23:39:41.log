@@ -1,0 +1,36 @@
+[Wed, 07 Jan 2015 11:08:01 GMT] ERROR 127.0.0.1 - - [Wed Jan 07 2015 12:08:01 GMT+0100 (CET)] "GET /users/AAE0C6D8-4F4C-49E1-B02A-64AFD6AA6537 1.1" 500 1923 "http://localhost:4000/users/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Unexpected token if
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Wed, 07 Jan 2015 11:08:15 GMT] ERROR 127.0.0.1 - - [Wed Jan 07 2015 12:08:15 GMT+0100 (CET)] "GET /users/AAE0C6D8-4F4C-49E1-B02A-64AFD6AA6537 1.1" 500 1923 "http://localhost:4000/users/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Unexpected token if
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Wed, 07 Jan 2015 11:39:59 GMT] ERROR 127.0.0.1 - - [Wed Jan 07 2015 12:39:59 GMT+0100 (CET)] "GET / 1.1" 500 2254 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'validate' of undefined
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:786:57)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:66:27)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:25:10)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)

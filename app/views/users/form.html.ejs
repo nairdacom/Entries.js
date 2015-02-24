@@ -1,0 +1,84 @@
+<% if(currentUser.isAdmin) { %> 
+<div class="form-group col-md-6">
+  <label for="username" class="control-label">Nazwa użytkownika</label>
+  <%- contentTag('input', user.username, {type:'text', class:'form-control', name:'username'}) %>
+</div>
+<div class="form-group col-md-6">
+  <label for="club" class="control-label">Nazwa klubu</label>
+  <select name="club" id="club" class="form-control">
+    <option value='(AENE) AZS UMK Energa Toruń'>(AENE) AZS UMK Energa Toruń</option>
+    <option value='(AGDA) AZS AWFiS Gdańsk'>(AGDA) AZS AWFiS Gdańsk</option>
+    <option value='(AGOR) AZS AWF Gorzów Wlkp.'>(AGOR) AZS AWF Gorzów Wlkp.</option>
+    <option value='(AKRA) AZS AWF Krakow'>(AKRA) AZS AWF Krakow</option>
+    <option value='(APOZ) AZS AWF Poznań'>(APOZ) AZS AWF Poznań</option>
+    <option value='(ASZC) AZS Szczecin'>(ASZC) AZS Szczecin</option>
+    <option value='(AWAR) AZS AWF Warszawa'>(AWAR) AZS AWF Warszawa</option>
+    <option value='(AWRO) AZS Politechnika Wrocław'>(AWRO) AZS Politechnika Wrocław</option>
+    <option value='(KBKW) BKW Bydgoszcz'>(KBKW) BKW Bydgoszcz</option>
+    <option value='(KBTW) BTW Bydgoszcz'>(KBTW) BTW Bydgoszcz</option>
+    <option value='(KBUD) Budowlani Toruń'>(KBUD) Budowlani Toruń</option>
+    <option value='(KCHT) CHTW Chełmża'>(KCHT) CHTW Chełmża</option>
+    <option value='(KGKW) Drakkar Gdańsk'>(KGKW) Drakkar Gdańsk</option>
+    <option value='(KGOP) Gopło Kruszwica'>(KGOP) Gopło Kruszwica</option>
+    <option value='(KGTW) Gedania Gdańsk'>(KGTW) Gedania Gdańsk</option>
+    <option value='(KKTW) KTW Kalisz'>(KKTW) KTW Kalisz</option>
+    <option value='(KLOT) LOTTO Bydgostia'>(KLOT) LOTTO Bydgostia</option>
+    <option value='(KMOS) MOS Ełk'>(KMOS) MOS Ełk</option>
+    <option value='(KPEG) KSWiR Pegaz Wrocław'>(KPEG) KSWiR Pegaz Wrocław</option>
+    <option value='(KPOL) Polonia Poznań'>(KPOL) Polonia Poznań</option>
+    <option value='(KPOS) Posnania RBW Poznań'>(KPOS) Posnania RBW Poznań</option>
+    <option value='(KPTW) PTW Płock'>(KPTW) PTW Płock</option>
+    <option value='(KSOK) Sokół Ostróda'>(KSOK) Sokół Ostróda</option>
+    <option value='(KTRY) Tryton Poznań'>(KTRY) Tryton Poznań</option>
+    <option value='(KW04) KW 1904 Poznań'>(KW04) KW 1904 Poznań</option>
+    <option value='(KWIR) WIR Iława'>(KWIR) WIR Iława</option>
+    <option value='(KWIS) Wisła Grudziądz'>(KWIS) Wisła Grudziądz</option>
+    <option value='(KWTW) WTW Warszawa'>(KWTW) WTW Warszawa</option>
+    <option value='(KZAW) Zawisza Bydgoszcz'>(KZAW) Zawisza Bydgoszcz</option>
+    <option value='(MAST) Masters'>(MAST) Masters</option>
+    <option value='(NIEZ) Niezrzeszeni'>(NIEZ) Niezrzeszeni</option>
+    <option value='(PZTW) PZTW (kadra)'>(PZTW) PZTW (kadra)</option>
+    <option value='(UBEK) UKS Bekawianka'>(UBEK) UKS Bekawianka</option>
+    <option value='(UBRO) UKS Remus Brodnica'>(UBRO) UKS Remus Brodnica</option>
+    <option value='(UDWO) MKS Dwójka Warszawa'>(UDWO) MKS Dwójka Warszawa</option>
+    <option value='(UKOR) UKS Dwójka Kórnik'>(UKOR) UKS Dwójka Kórnik</option>
+    <option value='(UKRA) UKS 93 Kraków'>(UKRA) UKS 93 Kraków</option>
+    <option value='(USAL) UKS Salwator Kraków'>(USAL) UKS Salwator Kraków</option>
+    <option value='(USZO) UKS Szóstka'>(USZO) UKS Szóstka</option>
+    <option value='(UTCZ) Unia Tczew'>(UTCZ) Unia Tczew</option>
+    <option value='(UWAL) UKS Ateny Wałcz'>(UWAL) UKS Ateny Wałcz</option>
+    <option value='(UWRO) UKS Milenium Wrocław'>(UWRO) UKS Milenium Wrocław</option>
+  </select>
+</div>
+<% } %>
+<div class="form-group col-md-6">
+  <label for="password" class="control-label">Hasło</label>
+  <%- contentTag('input', '', {type:'password', class:'form-control', name:'password'}) %>
+</div>
+<div class="form-group col-md-6">
+  <label for="confirmPpassword" class="control-label">Potwierdź hasło</label>
+  <%- contentTag('input', '', {type:'password', class:'form-control', name:'confirmPassword'}) %>
+</div>
+<div class="form-group col-md-6">
+  <label for="givenName" class="control-label">Imię</label>
+  <%- contentTag('input', user.givenName, {type:'text', class:'form-control', name:'givenName'}) %>
+</div>
+<div class="form-group col-md-6">
+  <label for="familyName" class="control-label">Nazwisko</label>
+  <%- contentTag('input', user.familyName, {type:'text', class:'form-control', name:'familyName'}) %>
+</div>
+<div class="form-group col-md-6">
+  <label for="email" class="control-label">Adres e-mail</label>
+  <%- contentTag('input', user.email, {type:'text', class:'form-control', name:'email'}) %>
+</div>
+<% if(currentUser.isAdmin) { %>
+<div class="form-group col-md-6">
+  <label for="isAdmin" class="control-label">Dostęp administracyjny</label>
+  <select name="isAdmin" class="form-control">
+    <option <% if(!user.isAdmin) { %> selected <% } %> value="0">nie</option>  
+    <option <% if(user.isAdmin) { %> selected <% } %> value="1">tak</option>
+  </select>
+</div>
+<% }  else { %>
+<div class="form-group col-md-6" style="height:80px;">&nbsp;</div>
+<% } %>

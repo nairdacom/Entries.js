@@ -1,0 +1,51 @@
+<div class="jumbotron">
+    <h3>Wydarzenia</h3>
+    <p>Dodawanie nowego wydarzenia.</p>
+</div>
+<div class="hero-unit">
+  <form id="event-form" class="form-horizontal" action="/events" method="POST">
+    <fieldset>
+      <legend>Dodaj nowe wydarzenie</legend>
+      <% if(params.errors) { %>
+      <div class="control-group">
+        <ul>
+        <% for(var err in params.errors) { %>
+          <li><%= params.errors[err]; %></li>
+        <% } %>
+        </ul>
+      </div>
+      <% } %>
+
+      <%- partial('form', {event: params}) %>
+        
+      <legend>Wybór konkurencji</legend>
+      <div class="control-group competitions">
+        <div>
+            <% var compCount = 1; %>
+            <%- selectTag(competitions, '', {
+              valueField: 'id'
+            , textField: 'name'
+            , name: 'competitions'
+            , class: 'btn btn-lg comp-element'
+            , style: 'margin-right:10px; margin-bottom: 10px;'
+            }); %>
+            <div class="btn btn-lg btn-primary" style="margin-bottom:10px; margin-left:10px;" onclick="addCompetition(this)">&gt;&gt;</div>
+        </div>
+      </div>
+        
+        
+      <div class="form-actions">
+        <%- contentTag('input', 'Zapisz wydarzenie', {type: 'submit', class: 'btn btn-primary'}) %>
+      </div>
+        
+    </fieldset>
+  </form>
+</div>
+
+
+<script>
+    function addCompetition(element){
+        var compEl = $(".comp-element")[0];
+        $(element).before(  compEl.outerHTML );
+    }
+</script>

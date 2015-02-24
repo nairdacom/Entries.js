@@ -1,0 +1,178 @@
+[Mon, 05 Jan 2015 12:57:55 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 13:57:55 GMT+0100 (CET)] "POST /events 1.1" 500 2005 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: EventRecord is not defined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:31:21
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:30:31)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Mon, 05 Jan 2015 12:59:06 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 13:59:06 GMT+0100 (CET)] "POST /events 1.1" 500 2244 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'validate' of undefined
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:786:57)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:31:45
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:30:31)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+[Mon, 05 Jan 2015 13:00:50 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:00:50 GMT+0100 (CET)] "POST /events 1.1" 500 2244 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'validate' of undefined
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:786:57)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:32:49
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:30:31)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+[Mon, 05 Jan 2015 13:04:04 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:04:04 GMT+0100 (CET)] "POST /events 1.1" 500 2244 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'validate' of undefined
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:786:57)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:32:49
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:30:31)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+[Mon, 05 Jan 2015 13:04:38 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:04:38 GMT+0100 (CET)] "POST /events 1.1" 500 2244 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'validate' of undefined
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:786:57)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:33:49
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:30:31)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+[Mon, 05 Jan 2015 13:06:11 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:06:11 GMT+0100 (CET)] "POST /events 1.1" 500 2244 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'validate' of undefined
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:786:57)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:32:49
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:30:31)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+[Mon, 05 Jan 2015 13:06:57 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:06:57 GMT+0100 (CET)] "POST /events 1.1" 500 2244 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'validate' of undefined
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:786:57)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:32:49
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:30:31)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+[Mon, 05 Jan 2015 13:08:26 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:08:26 GMT+0100 (CET)] "POST /events 1.1" 500 2244 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'validate' of undefined
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:786:57)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:32:49
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:30:31)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+[Mon, 05 Jan 2015 13:09:12 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:09:12 GMT+0100 (CET)] "POST /events 1.1" 500 2213 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Item cannot have a belongTo association if the item it belongs to is not yet saved.
+    at association._createAssociation (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:210:15)
+    at null.setEvent (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:248:44)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:34:25
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:473:9
+    at utils.mixin.insert (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:241:7)
+    at Function.obj.save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:462:27)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:121:18
+    at doIt (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:408:13)
+    at association._commitAssociationChanges (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:412:5)
+    at save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:115:14)
+[Mon, 05 Jan 2015 13:09:50 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:09:50 GMT+0100 (CET)] "POST /events 1.1" 500 2213 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Item cannot have a belongTo association if the item it belongs to is not yet saved.
+    at association._createAssociation (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:210:15)
+    at null.setEvent (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:248:44)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:34:21
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:473:9
+    at utils.mixin.insert (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:241:7)
+    at Function.obj.save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:462:27)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:121:18
+    at doIt (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:408:13)
+    at association._commitAssociationChanges (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:412:5)
+    at save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:115:14)
+[Mon, 05 Jan 2015 13:12:21 GMT] ERROR Worker 3401 died.
+[Mon, 05 Jan 2015 13:16:20 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:16:20 GMT+0100 (CET)] "GET /events/D127ECA3-6D35-4DD6-89B6-3030AA636FE2 1.1" 500 2335 "http://localhost:4000/events/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Object {"id":"D127ECA3-6D35-4DD6-89B6-3030AA636FE2","type":"Event","createdAt":"2015-01-05T13:13:02.366Z","updatedAt":"2015-01-05T13:13:02.403Z","name":"Nowe wydarzenie","clubOnly":true,"freeList":false} has no method 'getEventRerords'
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:64:15
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at show (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:56:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Mon, 05 Jan 2015 13:19:49 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:19:49 GMT+0100 (CET)] "GET /events/D127ECA3-6D35-4DD6-89B6-3030AA636FE2 1.1" 500 2141 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: ejs:21
+    19| </table>
+    20|     
+ >> 21|     <% console.log(event.getRecords()); %>
+Object #<Object> has no method 'getRecords'
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:1152)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Mon, 05 Jan 2015 13:28:44 GMT] ERROR Worker 3414 died.
+[Mon, 05 Jan 2015 13:28:55 GMT] ERROR Worker 3415 died.
+[Mon, 05 Jan 2015 13:38:31 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 14:38:31 GMT+0100 (CET)] "GET /events/D127ECA3-6D35-4DD6-89B6-3030AA636FE2 1.1" 500 2381 "http://localhost:4000/events/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: ejs:17
+    15| <h4 class="page-header">Konkurencje w tych zawodach</h4>
+    16| <% for(competition in competitions){ %>
+ >> 17|     <div class="btn btn-primary btn-lg" style="margin-right: 10px; margin-bottom: 10px;"> <%= competition.competition.name %> </div>
+    18| <% } %>
+Cannot read property 'name' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:1692)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Mon, 05 Jan 2015 14:46:32 GMT] ERROR 127.0.0.1 - - [Mon Jan 05 2015 15:46:32 GMT+0100 (CET)] "GET /events/B9E3931C-9A49-42B1-924D-EE446EDC0B4E 1.1" 500 1926 "http://localhost:4000/events/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Unexpected token catch
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14

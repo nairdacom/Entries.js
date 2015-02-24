@@ -1,0 +1,27 @@
+<div class="jumbotron">
+    <h3>Wydarzenia</h3>
+    <p>Przeglądaj wydarzenia. Wybierz interesujące, aby dokonać zgłoszeń.</p>
+</div>
+<div class="hero-unit">
+  <form id="event-form" class="form-horizontal" action="/events/<%= params.id %>?_method=PUT" method="POST">
+    <fieldset>
+      <legend>Edycja wydarzenia</legend>
+      <% if(params.errors) { %>
+      <div class="control-group">
+        <ul>
+        <% for(var err in params.errors) { %>
+          <li><%= params.errors[err]; %></li>
+        <% } %>
+        </ul>
+      </div>
+      <% } %>
+
+      <%- partial('form', {event: event}) %>
+
+      <div class="form-actions">
+        <%- contentTag('input', 'Zapisz', {type: 'submit', class: 'btn btn-primary'}) %>
+        <%- contentTag('button', 'Usuń', {type: 'submit', formaction: '/events/' + params.id + '?_method=DELETE', formmethod: 'POST', class: 'btn btn-danger'}) %>
+      </div>
+    </fieldset>
+  </form>
+</div>

@@ -1,0 +1,253 @@
+[Thu, 08 Jan 2015 22:47:04 GMT] ERROR Worker 6196 died.
+[Thu, 08 Jan 2015 22:47:10 GMT] ERROR Worker 6197 died.
+[Thu, 08 Jan 2015 22:49:11 GMT] ERROR Worker 6199 died.
+[Thu, 08 Jan 2015 22:49:21 GMT] ERROR Worker 6200 died.
+[Thu, 08 Jan 2015 22:50:29 GMT] ERROR 127.0.0.1 - - [Thu Jan 08 2015 23:50:29 GMT+0100 (CET)] "GET /rowers/import 1.1" 500 1845 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/rowers/import" not found in app/views, app/views/rowers and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 08 Jan 2015 22:51:01 GMT] ERROR 127.0.0.1 - - [Thu Jan 08 2015 23:51:01 GMT+0100 (CET)] "GET /rowers/import 1.1" 500 1845 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/rowers/import" not found in app/views, app/views/rowers and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 08 Jan 2015 22:51:02 GMT] ERROR 127.0.0.1 - - [Thu Jan 08 2015 23:51:02 GMT+0100 (CET)] "GET /rowers/import 1.1" 500 1845 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/rowers/import" not found in app/views, app/views/rowers and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 08 Jan 2015 22:52:24 GMT] ERROR 127.0.0.1 - - [Thu Jan 08 2015 23:52:24 GMT+0100 (CET)] "GET /rowers/import 1.1" 500 2232 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Cannot determine model type from empty array, specify one in opts
+    at strategy (/usr/local/lib/node_modules/geddy/lib/controller/responder/strategies/html.js:138:17)
+    at responder.Responder.respond (/usr/local/lib/node_modules/geddy/lib/controller/responder/index.js:48:31)
+    at utils.mixin._handleWithResponder (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:392:17)
+    at utils.mixin.respondWith (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:703:10)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:59:12
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at import (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:55:23)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+[Thu, 08 Jan 2015 22:58:19 GMT] ERROR 127.0.0.1 - - [Thu Jan 08 2015 23:58:19 GMT+0100 (CET)] "POST /rowers/import 1.1" 500 1845 "http://localhost:4000/rowers" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/rowers/import" not found in app/views, app/views/rowers and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 08 Jan 2015 23:10:13 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 00:10:13 GMT+0100 (CET)] "POST /rowers/import 1.1" 500 2043 "http://localhost:4000/rowers" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: XMLHttpRequest is not defined
+    at import (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:53:24)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:90:7
+[Thu, 08 Jan 2015 23:13:52 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 00:13:52 GMT+0100 (CET)] "POST /rowers/import 1.1" 500 2035 "http://localhost:4000/rowers" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: request is not defined
+    at import (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:54:6)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:90:7
+[Thu, 08 Jan 2015 23:13:57 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 00:13:57 GMT+0100 (CET)] "POST /rowers/import 1.1" 500 2035 "http://localhost:4000/rowers" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: request is not defined
+    at import (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:54:6)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:90:7
+[Thu, 08 Jan 2015 23:16:15 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 00:16:15 GMT+0100 (CET)] "POST /rowers/import 1.1" 500 2034 "http://localhost:4000/rowers" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: router is not defined
+    at import (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:54:6)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:90:7
+[Thu, 08 Jan 2015 23:16:17 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 00:16:17 GMT+0100 (CET)] "POST /rowers/import 1.1" 500 2034 "http://localhost:4000/rowers" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: router is not defined
+    at import (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:54:6)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:90:7
+[Thu, 08 Jan 2015 23:16:27 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 00:16:27 GMT+0100 (CET)] "POST /rowers/import 1.1" 500 2079 "http://localhost:4000/rowers" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Property 'request' of object [object Object] is not a function
+    at import (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:54:11)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:90:7
+[Thu, 08 Jan 2015 23:35:01 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 00:35:01 GMT+0100 (CET)] "POST /rowers/import 1.1" 500 2054 "http://localhost:4000/rowers" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'length' of null
+    at import (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:59:27)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:90:7
+[Thu, 08 Jan 2015 23:39:27 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 00:39:27 GMT+0100 (CET)] "POST /rowers/import 1.1" 500 1939 "http://localhost:4000/rowers/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Object.keys called on non-object
+    at Function.keys (native)
+    at _isByIdQuery (/usr/local/lib/node_modules/geddy/node_modules/model/lib/query/query.js:376:19)
+    at Query.initialize (/usr/local/lib/node_modules/geddy/node_modules/model/lib/query/query.js:389:17)
+    at Query (/usr/local/lib/node_modules/geddy/node_modules/model/lib/query/query.js:12:19)
+    at Function.obj.remove (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:546:15)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:58:28
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/request.js:143:11)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:944:16
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 08 Jan 2015 23:39:58 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 00:39:57 GMT+0100 (CET)] "POST /rowers/import 1.1" 500 1531 "http://localhost:4000/rowers/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Object #<Object> has no method 'redirect'
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:61:15
+    at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/request.js:143:11)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:944:16
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 08 Jan 2015 23:45:27 GMT] ERROR Worker 6298 died.
+[Fri, 09 Jan 2015 00:00:16 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 01:00:15 GMT+0100 (CET)] "GET /rowers 1.1" 500 1919 "http://localhost:4000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot call method 'get' of undefined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:12:32
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:8:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Fri, 09 Jan 2015 00:26:05 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 01:26:05 GMT+0100 (CET)] "GET /users/add 1.1" 500 1938 "http://localhost:4000/users/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Missing catch or finally after try
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Fri, 09 Jan 2015 00:27:25 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 01:27:25 GMT+0100 (CET)] "GET /users/add 1.1" 500 1926 "http://localhost:4000/users/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Unexpected token catch
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Fri, 09 Jan 2015 00:27:26 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 01:27:26 GMT+0100 (CET)] "GET /users/add 1.1" 500 1926 "http://localhost:4000/users/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Unexpected token catch
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Fri, 09 Jan 2015 00:46:50 GMT] ERROR Worker 6546 died.
+[Fri, 09 Jan 2015 00:46:54 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 01:46:54 GMT+0100 (CET)] "GET /rowers 1.1" 500 1597 "http://localhost:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: user is not defined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:9:8)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Fri, 09 Jan 2015 00:47:13 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 01:47:13 GMT+0100 (CET)] "GET /rowers 1.1" 500 1597 "http://localhost:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: user is not defined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:9:8)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Fri, 09 Jan 2015 00:47:49 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 01:47:49 GMT+0100 (CET)] "GET /rowers 1.1" 500 1625 "http://localhost:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'isAdmin' of undefined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:9:12)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Fri, 09 Jan 2015 00:47:54 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 01:47:54 GMT+0100 (CET)] "GET /rowers 1.1" 500 1625 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'isAdmin' of undefined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:9:12)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Fri, 09 Jan 2015 00:48:04 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 01:48:04 GMT+0100 (CET)] "GET /rowers 1.1" 500 1625 "http://localhost:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+TypeError: Cannot read property 'isAdmin' of undefined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:9:12)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Fri, 09 Jan 2015 00:49:43 GMT] ERROR 127.0.0.1 - - [Fri Jan 09 2015 01:49:43 GMT+0100 (CET)] "GET /rowers 1.1" 500 1597 "http://localhost:4000/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: user is not defined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/rowers.js:9:8)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)

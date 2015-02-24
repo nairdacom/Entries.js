@@ -1,0 +1,46 @@
+<div class="jumbotron">
+    <h3>Zgłoszenia do regat</h3>
+    <p><%= event.name %></p>
+</div>
+<% for(var i = 0; i< competitions.length; i++) {  %>
+<div class="panel panel-default" id="<%= competitions[i].id %>">
+    <div class="panel-heading">
+      <%= competitions[i].number %> - <%= competitions[i].competition.name %>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped table-hover">
+            <tr>
+                <th>No.</th>
+                <th>Klub</th>
+                <th>Zawodnicy</th>
+                <th>Trenerzy</th>
+                <th>Zgłaszający</th>
+            </tr>
+            <% var no = 1; for(var z=0; z<entriesArr.length; z++) { %>
+            <% if(entriesArr[z].competition.name == competitions[i].competition.name) { %>
+            <tr>
+                <td><%= no++ %></td>
+                <td><%= entriesArr[z].rower[0].club %></td>
+                <td>
+                    <% for(var zNo = 0; zNo<entriesArr[z].rower.length; zNo++) { %>
+                        <%= entriesArr[z].rower[zNo].lastName + " " + entriesArr[z].rower[zNo].firstName + ", "  %>
+                    <% } %>
+                </td>
+                <td>
+                    <% if (entriesArr[z].coachList !== undefined) { for(var zNo = 0; zNo<entriesArr[z].coachList.length; zNo++) { %>
+                        <%= entriesArr[z].coachList[zNo].lastName + " " + entriesArr[z].coachList[zNo].firstName + ", "  %>
+                    <% }} %>
+                </td>
+                <td>
+                    <% if(entriesArr[z].user.club!="") { %>
+                      <%= entriesArr[z].user.familyName + " " + entriesArr[z].user.givenName %>
+                    <% } else { %>
+                      Administrator
+                    <% } %>
+                </td>
+            </tr>
+            <% }} %>
+        </table>
+    </div>
+</div>
+<% } %>

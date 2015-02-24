@@ -1,0 +1,94 @@
+[Mon, 05 Jan 2015 00:57:13 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "detailedErrors": true,
+  "requestTimeout": null,
+  "flash": {
+    "defaultClass": "alert",
+    "inlineClasses": {
+      "success": "alert alert-success",
+      "alert": "alert",
+      "error": "alert alert-error",
+      "info": "alert alert-info"
+    },
+    "blockClasses": {
+      "success": "alert alert-block alert-success",
+      "alert": "alert alert-block",
+      "error": "alert alert-block alert-error",
+      "info": "alert alert-block alert-info"
+    }
+  },
+  "debug": true,
+  "watch": {
+    "files": [
+      "/config",
+      "/lib",
+      "/app/controllers",
+      "/app/models",
+      "/app/views",
+      "/app/helpers"
+    ],
+    "includePattern": "\\.(js|coffee|css|less|scss)$",
+    "excludePattern": "\\.git|node_modules"
+  },
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/nairdacom/Documents/Autorskie/Entries.js/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/nairdacom/Documents/Autorskie/Entries.js/public",
+  "assetHost": "",
+  "assetBasePath": "/",
+  "cacheControl": {
+    "expires": {
+      "default": 0
+    }
+  },
+  "sessions": {
+    "store": "filesystem",
+    "key": "sid",
+    "expiry": 1209600,
+    "filename": "_session_store.json"
+  },
+  "cookieSessionKey": "sdata",
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/nairdacom/Documents/Autorskie/Entries.js/config/locales"
+    ]
+  },
+  "appName": "Geddy App (development)",
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "mailer": null,
+  "generatedByVersion": "13.0.7",
+  "model": {
+    "defaultAdapter": "filesystem"
+  },
+  "passport": {
+    "successRedirect": "/",
+    "failureRedirect": "/login",
+    "twitter": {
+      "consumerKey": "XXXXX",
+      "consumerSecret": "XXXXX"
+    },
+    "facebook": {
+      "clientID": "XXXXX",
+      "clientSecret": "XXXXX"
+    },
+    "yammer": {
+      "clientID": "XXXXX",
+      "clientSecret": "XXXXX"
+    }
+  },
+  "secret": "Cg4VQl0CdiTMPLXsOCQPNKgbnPDEPC5KcSqCf8uf7Rla7uTBm6G5vG9hQXU6kx1wGbl8m0YuP1n0uFESASKrTMTS9d7yNkGAFgthS7ScF4LwNOs59FdUKz1IDPctDe4m"
+}
+[Mon, 05 Jan 2015 00:57:13 GMT] INFO Creating 1 worker process.
+[Mon, 05 Jan 2015 00:58:32 GMT] INFO Creating 1 worker process.
+[Mon, 05 Jan 2015 00:58:33 GMT] INFO Server worker running in development on port 4000 with a PID of: 3138

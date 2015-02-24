@@ -1,0 +1,19 @@
+<div class="jumbotron">
+    <h3>Konkurencje</h3>
+    <p>Zarządzaj słownikiem konkurencji zdefiniowanym w systemie.</p>
+</div>
+<h4 class="page-header"><%- competition.name + " - " + competition.description %></h4>
+<%- linkTo('Edycja', editCompetitionPath(params.id), {class: 'btn pull-right btn-warning', style:'margin-left: 10px;'}); %>
+<%- linkTo('Powrót', competitionPath(''), {class: 'btn pull-right btn-primary'}); %>
+
+<h4><small>Szczegóły konkurencji</small></h4>
+<table class="table table-stripped" style="width:60%;">
+    <% for(var i in competition) { -%>
+        <tr>
+            <% if(i !== 'saved') { -%>
+                <td><%= i %></td>
+                <td><%= competition[i] %></td>
+            <% } -%>
+        </tr>
+    <% } -%>
+</table>

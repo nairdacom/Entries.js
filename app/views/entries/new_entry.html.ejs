@@ -1,0 +1,94 @@
+<div class="jumbotron">
+    <h3>Zgłoszenie do regat</h3>
+    <p><%= event.name %> | <%= competition.name %> (<%= competition.description %>)</p>
+</div>
+<% if(!updating) { %> <form action="/entries/<%= event.id + '/' + competition.id %>/createEntry" method="POST">
+<% } else { %> <form action="/entries/<%= event.id + '/' + competition.id + '/' + entry.id %>/updateEntry" method="POST"> <% } %>
+    <div class="panel panel-default" style="width:70%; float:left;">
+        <div class="panel-heading">
+            Twoje zgłoszenie
+            <a href="/entries/<%= event.id %>">
+                <div class="btn btn-info pull-right">Anuluj</div>
+            </a>
+            <button type="submit" class="btn btn-primary pull-right" style="margin-right:10px;">
+                <% if(!updating){ %>
+                  Dodaj
+                <% } else { %>
+                  Zapisz
+                <% } %>
+            </button>
+
+        </div>
+        <div class="panel-body">
+            <table class="table table-hover table-striped">
+                <tr>
+                    <th>Pozycja</th>
+                    <th>Zawodnik</th>
+                </tr>
+
+                <% if(!updating){ %>
+                <% for(var i=1; i<competition.slot+1; i++) { %>
+                <tr>
+                    <td><%= i %></td>
+                    <td>
+                        <select name="rower" class="form-control">
+                            <% for (var z=0; z<rowers.length; z++) { %>
+                            <option value="<%= rowers[z].id %>">
+                                <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+                            </option>
+                            <% } %>
+                        </select>
+                    </td>
+                </tr>
+                <% }} else { %>
+                <% for(var i=1; i<competition.slot+1; i++) { %>
+                <tr>
+                    <td><%= i %></td>
+                    <td>
+                        <select name="rower" class="form-control">
+                            <% for (var z=0; z<rowers.length; z++) { %>
+                            <option <% if(rowersList[i-1].id == rowers[z].id){ %> selected <% } %> value="<%= rowers[z].id %>">
+                                <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+                            </option>
+                            <% } %>
+                        </select>
+                    </td>
+                </tr>
+                <% }} %>
+
+
+            </table>
+        </div>
+    </div>
+
+    <div class="panel panel-info" style="width:25%; float:left; margin-left:5%;">
+        <div class="panel-heading" style="color:#fff;">Trenerzy</div>
+        <div class="panel-body">
+            <div class="scroll-wrapper">
+                <% for (var i=0; i<coachList.length; i++) { %>
+                <% console.log("\n\n\n"+coaches); %> 
+                    <input type="checkbox" <% if((coaches!== undefined)&&(coaches!==null)){ %><%= coachChecked(coachList[i].id,coaches) %><% } %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+                    <label for="<%= coachList[i].id %>" >
+                        <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+                    </label><br/>
+
+                <% } %>
+                </ul>    
+            </div>
+        </div>
+    </div>
+</form>
+<%   
+    coachChecked = function(currentCID, coachList){
+      for(var i=0; i<coachList.length; i++){
+        if(currentCID === coachList[i].id) return " checked ";
+      }
+      return "";
+  }
+%>
+<!--<div class="panel panel-info" style="width:25%; float:left; margin-left:5%;">
+    <div class="panel-heading" style="color:#fff;">Informacja</div>
+    <div class="panel-body">Pamiętaj, że każde Twoje zgłoszenie możesz usunąć lub zmienić w terminie zgłoszeń.<br/>
+    Pamiętaj także, że każde Twoje zgłoszenie musi zostać opłacone.
+    </div>
+</div>-->

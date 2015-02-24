@@ -1,0 +1,28 @@
+<div class="jumbotron">
+    <h3>Konta</h3>
+    <p>Zarządzaj kontami użytkowników.</p>
+</div>
+
+<h4 class="page-header id"><%= user.givenName + " " + user.familyName  %></h4>
+<%- linkTo('Edytuj', editUserPath(params.id), {class: 'btn pull-right btn-warning', style:'margin-left:10px;'}); %>
+<%- linkTo('Wróć', userPath(''), {class: 'btn pull-right btn-primary'}); %>
+
+<h4><small>Szczegóły użytkownika</small></h4>
+<table class="table table-stripped" style="width:60%;">
+    <tr>
+        <td>Nazwa użytkownika</td>
+        <td><%= user.username %></td>
+    </tr>
+    <tr>
+        <td>Imię i nazwisko</td>
+        <td><%= user.givenName + " " + user.familyName %></td>
+    </tr>
+    <tr>
+        <td>Adres e-mail</td>
+        <td><%= user.email %></td>
+    </tr>
+    <tr>
+        <td>Dostęp administracyjny</td>
+        <td><% if(user.isAdmin) { %> TAK <% } else { %> NIE <% } %></td>
+    </tr>
+</table>

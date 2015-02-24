@@ -1,0 +1,19 @@
+<form id="login-form" action="<%= localPath %>" method="POST">
+      
+      <div class="row">
+          <legend class="col-md-12" style="box-sizing:border-box;">Zaloguj</legend>
+          <div class="form-group col-md-6">
+            <label for="username" class="control-label">Nazwa uzytkownika</label>
+            <%- contentTag('input', params.username, {type:'text', class:'form-control', name:'username'}) %>
+          </div>
+      </div>
+      <div class="row">
+          <div class="form-group col-md-6">
+            <label for="password" class="control-label">Hasło</label>
+            <%- contentTag('input', params.password, {type:'password', class:'form-control', name:'password'}) %>
+          </div>
+      </div>
+      <div class="form-actions">
+        <%- contentTag('input', 'Zaloguj', {type: 'submit', class: 'btn btn-primary'}) %>
+      </div>
+</form>

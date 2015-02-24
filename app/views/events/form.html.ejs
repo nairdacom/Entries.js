@@ -1,0 +1,70 @@
+<div class="form-group col-md-12">
+  <label for="name" class="control-label">Nazwa wydarzenia</label>
+  <div class="controls">
+    <%- contentTag('input', event.name, {type:'text', class:'form-control', name:'name'}) %>
+  </div>
+</div>
+<div class="form-group col-md-6">
+  <label for="eventStart" class="control-label">Data rozpoczęcia zawodów</label>
+  <div class="controls">
+    <%- contentTag('input', event.eventStart, {type:'date', class:'form-control', name:'eventStart'}) %>
+  </div>
+</div>
+<div class="form-group col-md-6">
+  <label for="eventStop" class="control-label">Data zakończenia zawodów</label>
+  <div class="controls">
+    <%- contentTag('input', event.eventStop, {type:'date', class:'form-control', name:'eventStop'}) %>
+  </div>
+</div>
+<div class="form-group col-md-6">
+  <label for="entriesStart" class="control-label">Data rozpoczęcia zgłoszeń</label>
+  <div class="controls">
+    <%- contentTag('input', event.entriesStart, {type:'date', class:'form-control', name:'entriesStart'}) %>
+  </div>
+</div>
+<div class="form-group col-md-6">
+  <label for="entriesStop" class="control-label">Data zakończenia zgłoszeń</label>
+  <div class="controls">
+    <%- contentTag('input', event.entriesStop, {type:'date', class:'form-control', name:'entriesStop'}) %>
+  </div>
+</div>
+<div class="form-group col-md-6">
+  <label for="modifyStop" class="control-label">Data modyfikacji</label>
+  <div class="controls">
+    <%- contentTag('input', event.modifyStop, {type:'date', class:'form-control', name:'modifyStop'}) %>
+  </div>
+</div>
+<div class="form-group col-md-6">
+  <label for="modifyTimeStop" class="control-label">Godzina zakończenia modyfikacji</label>
+  <div class="controls">
+    <%- contentTag('input', event.modifyTimeStop, {type:'time', class:'form-control', name:'modifyTimeStop'}) %>
+  </div>
+</div>
+<div class="form-group col-md-6">
+  <label for="clubOnly" class="control-label">Tylko zgłoszenia klubowe</label>
+  <div class="controls">
+    <select name="clubOnly", class="span1">
+      <% if(event.clubOnly) { -%>
+      <option value="false">nie (można wybrać zawodnika z dowolnego klubu)</option>
+      <option value="true" selected>tak (tylko zawodnik z klubu przypisanego do użytkownika)</option>
+      <% } else { -%>
+      <option value="false" selected>nie (można wybrać zawodnika z dowolnego klubu)</option>
+      <option value="true">tak (tylko zawodnik z klubu przypisanego do użytkownika)</option>
+      <% } -%>
+    </select>
+  </div>
+</div>
+<div class="form-group col-md-6">
+  <label for="freeList" class="control-label">Możliwość ręcznego wpisywania</label>
+  <div class="controls">
+    <select name="freeList", class="span1">
+      <% if(event.freeList) { -%>
+      <option value="false">nie (można wybrać tylko zawodnika zdefiniowanego w systemie)</option>
+      <option value="true" selected>tak (można ręcznie wpisać dane zawodnika)</option>
+      <% } else { -%>
+      <option value="false" selected>nie (można wybrać tylko zawodnika zdefiniowanego w systemie)</option>
+      <option value="true" >tak (można ręcznie wpisać dane zawodnika)</option>
+      <% } -%>
+    </select>
+  </div>
+</div>

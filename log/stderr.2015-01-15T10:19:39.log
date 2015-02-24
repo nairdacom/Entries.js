@@ -1,0 +1,99 @@
+[Thu, 15 Jan 2015 09:18:07 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:18:07 GMT+0100 (CET)] "GET /entries 1.1" 500 1846 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/index" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:18:14 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:18:14 GMT+0100 (CET)] "GET /entries 1.1" 500 1846 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/index" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:19:03 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:19:03 GMT+0100 (CET)] "GET /entries 1.1" 500 1846 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/index" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:19:06 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:19:06 GMT+0100 (CET)] "GET /entries 1.1" 500 1846 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/index" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:19:28 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:19:28 GMT+0100 (CET)] "GET /entries 1.1" 500 1846 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/index" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:19:28 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:19:28 GMT+0100 (CET)] "GET /entries 1.1" 500 1846 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/index" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:19:29 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:19:29 GMT+0100 (CET)] "GET /entries 1.1" 500 1846 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/index" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:19:29 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:19:29 GMT+0100 (CET)] "GET /entries 1.1" 500 1846 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/index" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:19:29 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:19:29 GMT+0100 (CET)] "GET /entries 1.1" 500 1846 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/index" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)

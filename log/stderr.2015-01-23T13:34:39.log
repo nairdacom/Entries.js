@@ -1,0 +1,332 @@
+[Thu, 22 Jan 2015 15:04:59 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:04:58 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/show 1.1" 500 1938 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+SyntaxError: Missing catch or finally after try
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 15:08:37 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:08:37 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/show 1.1" 500 1926 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+SyntaxError: Unexpected token catch
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 15:33:00 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:33:00 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/BB1A5088-EAAD-4FD4-AE6C-35F73D383ED1/edit 1.1" 500 1845 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: Partial template "app/views/entries/edit" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 22 Jan 2015 15:33:05 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:33:05 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/BB1A5088-EAAD-4FD4-AE6C-35F73D383ED1/edit 1.1" 500 1845 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: Partial template "app/views/entries/edit" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 22 Jan 2015 15:40:02 GMT] ERROR Worker 7457 died.
+[Thu, 22 Jan 2015 15:41:01 GMT] ERROR Worker 7458 died.
+[Thu, 22 Jan 2015 15:41:31 GMT] ERROR Worker 7459 died.
+[Thu, 22 Jan 2015 15:42:01 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:42:01 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/BB1A5088-EAAD-4FD4-AE6C-35F73D383ED1/edit 1.1" 500 1602 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: entryId is not defined
+    at edit (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:56:37)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 15:43:13 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:43:13 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/BB1A5088-EAAD-4FD4-AE6C-35F73D383ED1/edit 1.1" 500 1867 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: Partial template "app/views/views/entries/new_entry.html" not found in app/views, app/views/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 22 Jan 2015 15:43:23 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:43:23 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/BB1A5088-EAAD-4FD4-AE6C-35F73D383ED1/edit 1.1" 500 1855 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry.html" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 22 Jan 2015 15:43:36 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:43:36 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/BB1A5088-EAAD-4FD4-AE6C-35F73D383ED1/edit 1.1" 500 2517 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:3
+    1| <div class="jumbotron">
+    2|     <h3>Zgłoszenie do regat</h3>
+ >> 3|     <p><%= event.name %> | <%= competition.name %> (<%= competition.description %>)</p>
+    4| </div>
+    5| <div class="panel panel-default" style="width:70%; float:left;">
+    6|     <form action="/entries/<%= event.id + '/' + competition.id %>/createEntry" method="POST">
+Cannot read property 'name' of null
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:2624)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 15:45:03 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:45:03 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/BB1A5088-EAAD-4FD4-AE6C-35F73D383ED1/edit 1.1" 500 2018 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot read property 'event' of null
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:58:27
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at edit (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:56:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 15:45:29 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:45:29 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/BB1A5088-EAAD-4FD4-AE6C-35F73D383ED1/edit 1.1" 500 2018 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot read property 'event' of null
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:58:27
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at edit (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:56:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 15:45:39 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:45:39 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/BB1A5088-EAAD-4FD4-AE6C-35F73D383ED1/edit 1.1" 500 2543 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: ejs:26
+    24|                     <td>
+    25|                         <select name="rower" class="form-control">
+ >> 26|                             <% for (var z=0; z<rowers.length; z++) { %>
+    27|                             <option value="<%= rowers[z].id %>">
+    28|                                 <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+    29|                             </option>
+rowers is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:2624)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 16:16:52 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:16:52 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/C2962B58-B1B0-4F23-A38D-560E1BCE45F3/edit 1.1" 500 2401 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: ejs:6
+    4| </div>
+    5| <div class="panel panel-default" style="width:70%; float:left;">
+ >> 6|     <% if(updating) { %>
+    7|       <form action="/entries/<%= event.id + '/' + competition.id %>/createEntry" method="POST">
+    8|     <% } %>
+    9|         <div class="panel-heading">
+updating is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:2728)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 16:26:42 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:26:42 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/A07862E4-7DDA-4E51-A7C0-2E33CA63F9AC/edit 1.1" 500 2025 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot read property 'isAdmin' of undefined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:63:23
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at edit (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:58:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 16:30:27 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:30:27 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/A07862E4-7DDA-4E51-A7C0-2E33CA63F9AC/edit 1.1" 500 2648 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:53
+    51|                         <select name="rower" class="form-control">
+    52|                             <% for (var z=0; z<rowers.length; z++) { %>
+ >> 53|                             <option <% if(rowersList[i-1].id == rowers[z].id){ %> selected <% } %> value="<%= rowers[z].id %>">
+    54|                                 <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+    55|                             </option>
+    56|                             <% } %>
+Cannot read property '0' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:4283)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 16:31:05 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:31:05 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/A07862E4-7DDA-4E51-A7C0-2E33CA63F9AC/edit 1.1" 500 2648 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:53
+    51|                         <select name="rower" class="form-control">
+    52|                             <% for (var z=0; z<rowers.length; z++) { %>
+ >> 53|                             <option <% if(rowersList[i-1].id == rowers[z].id){ %> selected <% } %> value="<%= rowers[z].id %>">
+    54|                                 <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+    55|                             </option>
+    56|                             <% } %>
+Cannot read property '0' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:4283)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 16:31:45 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:31:45 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/A07862E4-7DDA-4E51-A7C0-2E33CA63F9AC/edit 1.1" 500 2648 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:53
+    51|                         <select name="rower" class="form-control">
+    52|                             <% for (var z=0; z<rowers.length; z++) { %>
+ >> 53|                             <option <% if(rowersList[i-1].id == rowers[z].id){ %> selected <% } %> value="<%= rowers[z].id %>">
+    54|                                 <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+    55|                             </option>
+    56|                             <% } %>
+Cannot read property '0' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:4283)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 16:31:47 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:31:47 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/A07862E4-7DDA-4E51-A7C0-2E33CA63F9AC/edit 1.1" 500 2648 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:53
+    51|                         <select name="rower" class="form-control">
+    52|                             <% for (var z=0; z<rowers.length; z++) { %>
+ >> 53|                             <option <% if(rowersList[i-1].id == rowers[z].id){ %> selected <% } %> value="<%= rowers[z].id %>">
+    54|                                 <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+    55|                             </option>
+    56|                             <% } %>
+Cannot read property '0' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:4283)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 16:33:05 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:33:04 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/A07862E4-7DDA-4E51-A7C0-2E33CA63F9AC/edit 1.1" 500 1925 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 16:33:51 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:33:51 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/A07862E4-7DDA-4E51-A7C0-2E33CA63F9AC/edit 1.1" 500 2673 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:53
+    51|                         <select name="rower" class="form-control">
+    52|                             <% for (var z=0; z<rowers.length; z++) { console.log(rowersList); %>
+ >> 53|                             <option <% if(rowersList[i-1].id == rowers[z].id){ %> selected <% } %> value="<%= rowers[z].id %>">
+    54|                                 <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+    55|                             </option>
+    56|                             <% } %>
+Cannot read property '0' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:4308)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 16:36:37 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:36:36 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/A07862E4-7DDA-4E51-A7C0-2E33CA63F9AC/edit 1.1" 500 2673 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:53
+    51|                         <select name="rower" class="form-control">
+    52|                             <% for (var z=0; z<rowers.length; z++) { console.log(rowersList); %>
+ >> 53|                             <option <% if(rowersList[i-1].id == rowers[z].id){ %> selected <% } %> value="<%= rowers[z].id %>">
+    54|                                 <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+    55|                             </option>
+    56|                             <% } %>
+Cannot read property '0' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:4308)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 16:37:05 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:37:04 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/A07862E4-7DDA-4E51-A7C0-2E33CA63F9AC/edit 1.1" 500 2673 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:53
+    51|                         <select name="rower" class="form-control">
+    52|                             <% for (var z=0; z<rowers.length; z++) { console.log(rowersList); %>
+ >> 53|                             <option <% if(rowersList[i-1].id == rowers[z].id){ %> selected <% } %> value="<%= rowers[z].id %>">
+    54|                                 <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+    55|                             </option>
+    56|                             <% } %>
+Cannot read property '0' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:4308)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 16:37:49 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 17:37:49 GMT+0100 (CET)] "GET /entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3/A07862E4-7DDA-4E51-A7C0-2E33CA63F9AC/edit 1.1" 500 2668 "http://localhost:4000/entries/AF0002DF-FBF4-4F05-880F-1BE441705ED3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:53
+    51|                         <select name="rower" class="form-control">
+    52|                             <% for (var z=0; z<rowers.length; z++) { console.log(entry); %>
+ >> 53|                             <option <% if(rowersList[i-1].id == rowers[z].id){ %> selected <% } %> value="<%= rowers[z].id %>">
+    54|                                 <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
+    55|                             </option>
+    56|                             <% } %>
+Cannot read property '0' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:4303)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14

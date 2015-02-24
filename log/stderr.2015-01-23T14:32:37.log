@@ -1,0 +1,83 @@
+[Fri, 23 Jan 2015 13:01:28 GMT] ERROR Worker 8920 died.
+[Fri, 23 Jan 2015 13:03:43 GMT] ERROR Worker 8923 died.
+[Fri, 23 Jan 2015 13:03:50 GMT] ERROR Worker 8924 died.
+[Fri, 23 Jan 2015 13:06:15 GMT] ERROR 127.0.0.1 - - [Fri Jan 23 2015 14:06:15 GMT+0100 (CET)] "POST /events 1.1" 500 2255 "http://localhost:4000/events" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: withFunction validator for field "eventStop" must be a function.
+    at baseValidators.withFunction (/usr/local/lib/node_modules/geddy/node_modules/model/lib/validators.js:146:13)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/validators.js:194:14
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:831:13)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:27:35)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+[Fri, 23 Jan 2015 13:06:35 GMT] ERROR Worker 8928 died.
+[Fri, 23 Jan 2015 13:06:40 GMT] ERROR Worker 8929 died.
+[Fri, 23 Jan 2015 13:06:57 GMT] ERROR 127.0.0.1 - - [Fri Jan 23 2015 14:06:57 GMT+0100 (CET)] "POST /events 1.1" 500 2255 "http://localhost:4000/events" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: withFunction validator for field "eventStop" must be a function.
+    at baseValidators.withFunction (/usr/local/lib/node_modules/geddy/node_modules/model/lib/validators.js:146:13)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/validators.js:194:14
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:831:13)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:27:35)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+[Fri, 23 Jan 2015 13:07:04 GMT] ERROR Worker 8931 died.
+[Fri, 23 Jan 2015 13:08:15 GMT] ERROR Worker 8940 died.
+[Fri, 23 Jan 2015 13:08:21 GMT] ERROR Worker 8942 died.
+[Fri, 23 Jan 2015 13:08:33 GMT] ERROR Worker 8943 died.
+[Fri, 23 Jan 2015 13:08:42 GMT] ERROR Worker 8944 died.
+[Fri, 23 Jan 2015 13:09:03 GMT] ERROR 127.0.0.1 - - [Fri Jan 23 2015 14:09:03 GMT+0100 (CET)] "POST /events 1.1" 500 2255 "http://localhost:4000/events" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: withFunction validator for field "eventStop" must be a function.
+    at baseValidators.withFunction (/usr/local/lib/node_modules/geddy/node_modules/model/lib/validators.js:146:13)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/validators.js:194:14
+    at Object.utils.mixin.validateProperty (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:831:13)
+    at Object.utils.mixin.validateAndUpdateFromParams (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:744:24)
+    at Object.utils.mixin.createItem (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:651:10)
+    at Function.obj.create (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:302:31)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:27:35)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+[Fri, 23 Jan 2015 13:15:32 GMT] ERROR 127.0.0.1 - - [Fri Jan 23 2015 14:15:32 GMT+0100 (CET)] "POST /events 1.1" 500 1321 "http://localhost:4000/events" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Internal Server Error
+    at Domain.<anonymous> (/usr/local/lib/node_modules/geddy/lib/app/index.js:244:23)
+    at Domain.emit (events.js:95:17)
+    at process._fatalException (node.js:255:29)
+[Fri, 23 Jan 2015 13:16:46 GMT] ERROR 127.0.0.1 - - [Fri Jan 23 2015 14:16:45 GMT+0100 (CET)] "POST /events 1.1" 500 1631 "http://localhost:4000/events" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: Wydarzenie nie może się zakończyć zanim się zacznie.
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:31:50)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Fri, 23 Jan 2015 13:21:06 GMT] ERROR Worker 8954 died.
+[Fri, 23 Jan 2015 13:21:20 GMT] ERROR 127.0.0.1 - - [Fri Jan 23 2015 14:21:19 GMT+0100 (CET)] "POST /events 1.1" 500 2190 "http://localhost:4000/events" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot set property 'eventId' of undefined
+    at association._createAssociation (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:277:27)
+    at null.addEventRecord (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:248:44)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:51:19
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:473:9
+    at utils.mixin.insert (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:241:7)
+    at Function.obj.save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:462:27)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:121:18
+    at doIt (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:408:13)
+    at association._commitAssociationChanges (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:412:5)
+    at save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:115:14)
+[Fri, 23 Jan 2015 13:21:32 GMT] ERROR 127.0.0.1 - - [Fri Jan 23 2015 14:21:32 GMT+0100 (CET)] "POST /events 1.1" 500 2190 "http://localhost:4000/events" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot set property 'eventId' of undefined
+    at association._createAssociation (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:277:27)
+    at null.addEventRecord (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:248:44)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:51:19
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:473:9
+    at utils.mixin.insert (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:241:7)
+    at Function.obj.save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:462:27)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:121:18
+    at doIt (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:408:13)
+    at association._commitAssociationChanges (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:412:5)
+    at save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:115:14)

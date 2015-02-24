@@ -1,0 +1,33 @@
+<div class="jumbotron">
+    <h3>Wioślarze</h3>
+    <p>Zarządzaj zawodnikami. Domyślnie zawodnicy są importowani z systemu licencji.</p>
+</div>
+
+
+<div class="hero-unit">
+  <h4 class="page-header">Lista zawodników i trenerów posiadających aktywne licencje PZTW</h4>
+  <% if(user.isAdmin){ %>
+  <form action="/rowers/import" method="post">
+    <input type="submit" name="import" value="Importuj dane" class="btn btn-primary btn-lg pull-right"/>  
+  </form> 
+  <% } %>
+</div>
+
+<table class="table table-striped table-hover" style="width: 60%;">
+  <tr>
+    <th>Nr lic.</th>  
+    <th>Imię</th>
+    <th>Nazwisko</th>
+    <th>Klub</th>
+  </tr>
+<% if (rowers) { %>
+<% for (var i = 0, ii = rowers.length; i < ii; i++) { %>
+  <tr>
+    <td><%= rowers[i].licenceNo %></td>
+    <td><%= rowers[i].firstName %></td>
+    <td><%= rowers[i].lastName %></td>
+    <td><%= rowers[i].club %></td>
+  </tr>
+<% } %>
+<% } %>
+</table>

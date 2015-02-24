@@ -1,0 +1,62 @@
+[Tue, 27 Jan 2015 09:54:18 GMT] ERROR 127.0.0.1 - - [Tue Jan 27 2015 10:54:18 GMT+0100 (CET)] "POST /events 1.1" 500 2089 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: respondWith expects either a model, a collection of models, or an Error object
+    at strategy (/usr/local/lib/node_modules/geddy/lib/controller/responder/strategies/html.js:164:15)
+    at responder.Responder.respond (/usr/local/lib/node_modules/geddy/lib/controller/responder/index.js:48:31)
+    at utils.mixin._handleWithResponder (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:392:17)
+    at utils.mixin.respondWith (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:703:10)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:34:14)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Tue, 27 Jan 2015 09:55:11 GMT] ERROR 127.0.0.1 - - [Tue Jan 27 2015 10:55:11 GMT+0100 (CET)] "POST /events 1.1" 500 2089 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: respondWith expects either a model, a collection of models, or an Error object
+    at strategy (/usr/local/lib/node_modules/geddy/lib/controller/responder/strategies/html.js:164:15)
+    at responder.Responder.respond (/usr/local/lib/node_modules/geddy/lib/controller/responder/index.js:48:31)
+    at utils.mixin._handleWithResponder (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:392:17)
+    at utils.mixin.respondWith (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:703:10)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:34:14)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Tue, 27 Jan 2015 09:55:17 GMT] ERROR 127.0.0.1 - - [Tue Jan 27 2015 10:55:17 GMT+0100 (CET)] "POST /events 1.1" 500 2089 "http://localhost:4000/events/add" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: respondWith expects either a model, a collection of models, or an Error object
+    at strategy (/usr/local/lib/node_modules/geddy/lib/controller/responder/strategies/html.js:164:15)
+    at responder.Responder.respond (/usr/local/lib/node_modules/geddy/lib/controller/responder/index.js:48:31)
+    at utils.mixin._handleWithResponder (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:392:17)
+    at utils.mixin.respondWith (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:703:10)
+    at create (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:34:14)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Tue, 27 Jan 2015 10:06:46 GMT] ERROR Worker 4571 died.
+[Tue, 27 Jan 2015 10:07:11 GMT] ERROR Worker 4572 died.
+[Tue, 27 Jan 2015 10:15:53 GMT] ERROR 127.0.0.1 - - [Tue Jan 27 2015 11:15:53 GMT+0100 (CET)] "GET /events 1.1" 500 1851 "http://localhost:4000/entries/78E6A0D2-E26E-4B5E-922A-C03346ADFB83/show" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Object 2015-01-11T23:00:00.000Z has no method 'getTime'
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:104:27)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:8:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Tue, 27 Jan 2015 10:16:02 GMT] ERROR 127.0.0.1 - - [Tue Jan 27 2015 11:16:02 GMT+0100 (CET)] "GET /events 1.1" 500 1851 "http://localhost:4000/entries/78E6A0D2-E26E-4B5E-922A-C03346ADFB83/show" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Object 2015-01-11T23:00:00.000Z has no method 'getTime'
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:104:27)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:8:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Tue, 27 Jan 2015 10:16:16 GMT] ERROR 127.0.0.1 - - [Tue Jan 27 2015 11:16:16 GMT+0100 (CET)] "GET /events 1.1" 500 1851 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Object 2015-01-11T23:00:00.000Z has no method 'getTime'
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:104:27)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/events.js:8:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)

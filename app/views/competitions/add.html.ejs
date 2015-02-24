@@ -1,0 +1,26 @@
+<div class="jumbotron">
+    <h3>Konkurencje</h3>
+    <p>Zarządzaj słownikiem konkurencji zdefiniowanym w systemie.</p>
+</div>
+<div class="hero-unit">
+  <form id="competition-form" class="form-horizontal" action="/competitions" method="POST">
+    <fieldset>
+      <legend>Dodaj nową konkurencję</legend>
+      <% if(params.errors) { %>
+      <div class="control-group">
+        <ul>
+        <% for(var err in params.errors) { %>
+          <li><%= params.errors[err]; %></li>
+        <% } %>
+        </ul>
+      </div>
+      <% } %>
+
+      <%- partial('form', {competition: params}) %>
+
+      <div class="form-actions">
+        <%- contentTag('input', 'Dodaj', {type: 'submit', class: 'btn btn-primary col-md-3'}) %>
+      </div>
+    </fieldset>
+  </form>
+</div>

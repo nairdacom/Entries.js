@@ -1,0 +1,170 @@
+[Tue, 27 Jan 2015 09:45:54 GMT] INFO Server starting with config: {
+  "environment": "development",
+  "workers": 1,
+  "port": 4000,
+  "spdy": null,
+  "ssl": null,
+  "detailedErrors": true,
+  "requestTimeout": null,
+  "flash": {
+    "defaultClass": "alert",
+    "inlineClasses": {
+      "success": "alert alert-success",
+      "alert": "alert",
+      "error": "alert alert-error",
+      "info": "alert alert-info"
+    },
+    "blockClasses": {
+      "success": "alert alert-block alert-success",
+      "alert": "alert alert-block",
+      "error": "alert alert-block alert-error",
+      "info": "alert alert-block alert-info"
+    }
+  },
+  "debug": true,
+  "watch": {
+    "files": [
+      "/config",
+      "/lib",
+      "/app/controllers",
+      "/app/models",
+      "/app/views",
+      "/app/helpers"
+    ],
+    "includePattern": "\\.(js|coffee|css|less|scss)$",
+    "excludePattern": "\\.git|node_modules"
+  },
+  "rotateWorkers": false,
+  "rotationWindow": 7200000,
+  "rotationTimeout": 300000,
+  "logDir": "/Users/nairdacom/Documents/Autorskie/Entries.js/log",
+  "gracefulShutdownTimeout": 30000,
+  "heartbeatInterval": 5000,
+  "heartbeatWindow": 20000,
+  "staticFilePath": "/Users/nairdacom/Documents/Autorskie/Entries.js/public",
+  "assetHost": "",
+  "assetBasePath": "/",
+  "cacheControl": {
+    "expires": {
+      "default": 0
+    }
+  },
+  "sessions": {
+    "store": "filesystem",
+    "key": "sid",
+    "expiry": 1209600,
+    "filename": "_session_store.json"
+  },
+  "cookieSessionKey": "sdata",
+  "i18n": {
+    "defaultLocale": "en-us",
+    "loadPaths": [
+      "/Users/nairdacom/Documents/Autorskie/Entries.js/config/locales"
+    ]
+  },
+  "appName": "Geddy App (development)",
+  "hostname": null,
+  "fullHostname": null,
+  "connectCompatibility": false,
+  "mailer": null,
+  "generatedByVersion": "13.0.7",
+  "model": {
+    "defaultAdapter": "filesystem"
+  },
+  "passport": {
+    "successRedirect": "/",
+    "failureRedirect": "/login",
+    "twitter": {
+      "consumerKey": "XXXXX",
+      "consumerSecret": "XXXXX"
+    },
+    "facebook": {
+      "clientID": "XXXXX",
+      "clientSecret": "XXXXX"
+    },
+    "yammer": {
+      "clientID": "XXXXX",
+      "clientSecret": "XXXXX"
+    }
+  },
+  "secret": "Cg4VQl0CdiTMPLXsOCQPNKgbnPDEPC5KcSqCf8uf7Rla7uTBm6G5vG9hQXU6kx1wGbl8m0YuP1n0uFESASKrTMTS9d7yNkGAFgthS7ScF4LwNOs59FdUKz1IDPctDe4m"
+}
+[Tue, 27 Jan 2015 09:45:54 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 09:45:54 GMT] INFO Server worker running in development on port 4000 with a PID of: 2177
+[Tue, 27 Jan 2015 09:48:27 GMT] INFO Code changed, killing 2177, cycling ...
+[Tue, 27 Jan 2015 09:48:27 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 09:48:28 GMT] INFO Server worker running in development on port 4000 with a PID of: 2246
+[Tue, 27 Jan 2015 09:51:37 GMT] INFO Code changed, killing 2246, cycling ...
+[Tue, 27 Jan 2015 09:51:37 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 09:51:38 GMT] INFO Server worker running in development on port 4000 with a PID of: 4549
+[Tue, 27 Jan 2015 09:51:54 GMT] INFO Code changed, killing 4549, cycling ...
+[Tue, 27 Jan 2015 09:51:54 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 09:51:55 GMT] INFO Server worker running in development on port 4000 with a PID of: 4550
+[Tue, 27 Jan 2015 09:53:15 GMT] INFO Code changed, killing 4550, cycling ...
+[Tue, 27 Jan 2015 09:53:15 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 09:53:15 GMT] INFO Server worker running in development on port 4000 with a PID of: 4552
+[Tue, 27 Jan 2015 09:54:16 GMT] INFO Code changed, killing 4552, cycling ...
+[Tue, 27 Jan 2015 09:54:16 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 09:54:16 GMT] INFO Server worker running in development on port 4000 with a PID of: 4553
+[Tue, 27 Jan 2015 09:55:08 GMT] INFO Code changed, killing 4553, cycling ...
+[Tue, 27 Jan 2015 09:55:08 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 09:55:08 GMT] INFO Server worker running in development on port 4000 with a PID of: 4554
+[Tue, 27 Jan 2015 09:56:17 GMT] INFO Code changed, killing 4554, cycling ...
+[Tue, 27 Jan 2015 09:56:17 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 09:56:17 GMT] INFO Server worker running in development on port 4000 with a PID of: 4555
+[Tue, 27 Jan 2015 09:57:43 GMT] INFO Code changed, killing 4555, cycling ...
+[Tue, 27 Jan 2015 09:57:43 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 09:57:43 GMT] INFO Server worker running in development on port 4000 with a PID of: 4556
+[Tue, 27 Jan 2015 09:58:21 GMT] INFO Code changed, killing 4556, cycling ...
+[Tue, 27 Jan 2015 09:58:21 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 09:58:21 GMT] INFO Server worker running in development on port 4000 with a PID of: 4557
+[Tue, 27 Jan 2015 10:00:48 GMT] INFO Code changed, killing 4557, cycling ...
+[Tue, 27 Jan 2015 10:00:48 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:00:49 GMT] INFO Server worker running in development on port 4000 with a PID of: 4560
+[Tue, 27 Jan 2015 10:01:47 GMT] INFO Code changed, killing 4560, cycling ...
+[Tue, 27 Jan 2015 10:01:47 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:01:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 4561
+[Tue, 27 Jan 2015 10:02:03 GMT] INFO Code changed, killing 4561, cycling ...
+[Tue, 27 Jan 2015 10:02:03 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:02:04 GMT] INFO Server worker running in development on port 4000 with a PID of: 4562
+[Tue, 27 Jan 2015 10:03:02 GMT] INFO Code changed, killing 4562, cycling ...
+[Tue, 27 Jan 2015 10:03:02 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:03:02 GMT] INFO Server worker running in development on port 4000 with a PID of: 4563
+[Tue, 27 Jan 2015 10:03:11 GMT] INFO Code changed, killing 4563, cycling ...
+[Tue, 27 Jan 2015 10:03:11 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:03:12 GMT] INFO Server worker running in development on port 4000 with a PID of: 4564
+[Tue, 27 Jan 2015 10:04:15 GMT] INFO Code changed, killing 4564, cycling ...
+[Tue, 27 Jan 2015 10:04:15 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:04:15 GMT] INFO Server worker running in development on port 4000 with a PID of: 4565
+[Tue, 27 Jan 2015 10:06:46 GMT] INFO Code changed, killing 4565, cycling ...
+[Tue, 27 Jan 2015 10:06:46 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:07:11 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:07:39 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:07:39 GMT] INFO Server worker running in development on port 4000 with a PID of: 4573
+[Tue, 27 Jan 2015 10:08:50 GMT] INFO Code changed, killing 4573, cycling ...
+[Tue, 27 Jan 2015 10:08:50 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:08:51 GMT] INFO Server worker running in development on port 4000 with a PID of: 4574
+[Tue, 27 Jan 2015 10:09:15 GMT] INFO Code changed, killing 4574, cycling ...
+[Tue, 27 Jan 2015 10:09:15 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:09:16 GMT] INFO Server worker running in development on port 4000 with a PID of: 4575
+[Tue, 27 Jan 2015 10:10:36 GMT] INFO Code changed, killing 4575, cycling ...
+[Tue, 27 Jan 2015 10:10:36 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:10:36 GMT] INFO Server worker running in development on port 4000 with a PID of: 4576
+[Tue, 27 Jan 2015 10:10:48 GMT] INFO Code changed, killing 4576, cycling ...
+[Tue, 27 Jan 2015 10:10:48 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:10:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 4577
+[Tue, 27 Jan 2015 10:11:44 GMT] INFO Code changed, killing 4577, cycling ...
+[Tue, 27 Jan 2015 10:11:44 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:11:44 GMT] INFO Server worker running in development on port 4000 with a PID of: 4582
+[Tue, 27 Jan 2015 10:12:03 GMT] INFO Code changed, killing 4582, cycling ...
+[Tue, 27 Jan 2015 10:12:03 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:12:04 GMT] INFO Server worker running in development on port 4000 with a PID of: 4583
+[Tue, 27 Jan 2015 10:12:48 GMT] INFO Code changed, killing 4583, cycling ...
+[Tue, 27 Jan 2015 10:12:48 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:12:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 4584
+[Tue, 27 Jan 2015 10:13:16 GMT] INFO Code changed, killing 4584, cycling ...
+[Tue, 27 Jan 2015 10:13:16 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:13:17 GMT] INFO Server worker running in development on port 4000 with a PID of: 4585
+[Tue, 27 Jan 2015 10:14:48 GMT] INFO Code changed, killing 4585, cycling ...
+[Tue, 27 Jan 2015 10:14:48 GMT] INFO Creating 1 worker process.
+[Tue, 27 Jan 2015 10:14:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 4586

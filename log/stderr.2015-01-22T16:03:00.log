@@ -1,0 +1,438 @@
+[Thu, 22 Jan 2015 09:24:28 GMT] ERROR Worker 7041 died.
+[Thu, 22 Jan 2015 09:30:36 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 10:30:36 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/2912E322-9F72-4FCB-A2B5-A7BE6201C8A3 1.1" 500 2490 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: ejs:20
+    18|                         <% for (var z=0; z<rowers.length; z++) { %>
+    19|                         <option value="<%= rowers[z].id %>">
+ >> 20|                             <%= rowers[z].lastName + " | " + upperCase(rowers[z].lastName) + " " + rowers[z].firstName %>
+    21|                         </option>
+    22|                         <% } %>
+    23|                     </select>
+upperCase is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:1995)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 10:01:39 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 11:01:39 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043/createEntry 1.1" 500 1607 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: array is not defined
+    at createEntry (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:76:27)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 10:02:01 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 11:02:01 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043/createEntry 1.1" 500 1607 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: array is not defined
+    at createEntry (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:76:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 10:02:27 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 11:02:27 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043/createEntry 1.1" 500 1607 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: array is not defined
+    at createEntry (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:76:18)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 10:02:32 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 11:02:32 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043/createEntry 1.1" 500 1607 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: array is not defined
+    at createEntry (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:76:22)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 12:36:04 GMT] ERROR Worker 7221 died.
+[Thu, 22 Jan 2015 12:36:35 GMT] ERROR Worker 7222 died.
+[Thu, 22 Jan 2015 12:37:03 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 13:37:03 GMT+0100 (CET)] "POST /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043/createEntry 1.1" 500 2026 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot call method 'add' of undefined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:79:25
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at createEntry (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:78:25)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 12:37:18 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 13:37:18 GMT+0100 (CET)] "POST /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043/createEntry 1.1" 500 2027 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot call method 'push' of undefined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:79:25
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at createEntry (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:78:25)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 12:37:30 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 13:37:30 GMT+0100 (CET)] "POST /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043/createEntry 1.1" 500 2027 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot call method 'push' of undefined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:79:25
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at createEntry (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:78:25)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 12:37:52 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 13:37:52 GMT+0100 (CET)] "POST /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043/createEntry 1.1" 500 1608 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: rowers is not defined
+    at createEntry (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:83:17)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 12:57:19 GMT] ERROR Worker 7249 died.
+[Thu, 22 Jan 2015 12:57:41 GMT] ERROR Worker 7250 died.
+[Thu, 22 Jan 2015 12:57:52 GMT] ERROR Worker 7251 died.
+[Thu, 22 Jan 2015 13:02:15 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:02:15 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1923 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/F2511DA3-C548-445D-9CA8-B554E4ED5043" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot call method 'push' of undefined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:18:68
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:16:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 13:02:29 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:02:29 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1923 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot call method 'push' of undefined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:18:68
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:16:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 13:02:42 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:02:42 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1923 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot call method 'push' of undefined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:18:64
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:16:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 13:03:30 GMT] ERROR Worker 7257 died.
+[Thu, 22 Jan 2015 13:03:44 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:03:44 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1603 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: entries is not defined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:20:17)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 13:04:24 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:04:24 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1603 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+ReferenceError: entries is not defined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:20:17)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 13:19:20 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:19:20 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 2430 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/9CD4D260-3215-456A-A152-F0E89CB2ACDB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:16
+    14| <% for(var i = 0; i< competitions.length; i++) {  %>
+    15| <div class="panel panel-default">
+ >> 16|     <div class="panel-heading">sdfsd<%= competitions[i].number %> - <%= competitions[i].comeptition.name %></div>
+    17|     <div class="panel-body"></div>
+    18| </div>
+    19| <% } %>
+Cannot read property 'name' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:5:552)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 13:32:52 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:32:52 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 2450 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/9CD4D260-3215-456A-A152-F0E89CB2ACDB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:34
+    32|                     <% } %>
+    33|                 </td>
+ >> 34|                 <td><%= entriesArr[z].createdAt.getDateString() %></td>
+    35|                 <td><%= entriesArr[z].user.givenName+ " " +entriesArr[z].user.familyName %></td>
+    36|             </tr>
+    37|             <% }} %>
+Object Thu Jan 22 2015 14:06:48 GMT+0100 (CET) has no method 'getDateString'
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:5:1880)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 13:33:10 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:33:10 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 2456 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/9CD4D260-3215-456A-A152-F0E89CB2ACDB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:34
+    32|                     <% } %>
+    33|                 </td>
+ >> 34|                 <td><%= Date(entriesArr[z].createdAt).getDateString() %></td>
+    35|                 <td><%= entriesArr[z].user.givenName+ " " +entriesArr[z].user.familyName %></td>
+    36|             </tr>
+    37|             <% }} %>
+Object Thu Jan 22 2015 14:33:10 GMT+0100 (CET) has no method 'getDateString'
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:5:1886)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 13:33:39 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:33:39 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 2438 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/9CD4D260-3215-456A-A152-F0E89CB2ACDB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:34
+    32|                     <% } %>
+    33|                 </td>
+ >> 34|                 <td><%= entriesArr[z].createdAt.substr(-5) %></td>
+    35|                 <td><%= entriesArr[z].user.givenName+ " " +entriesArr[z].user.familyName %></td>
+    36|             </tr>
+    37|             <% }} %>
+Object Thu Jan 22 2015 14:06:48 GMT+0100 (CET) has no method 'substr'
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:5:1875)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 13:33:46 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:33:46 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 2444 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/9CD4D260-3215-456A-A152-F0E89CB2ACDB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:34
+    32|                     <% } %>
+    33|                 </td>
+ >> 34|                 <td><%= entriesArr[z].createdAt.substring(-5) %></td>
+    35|                 <td><%= entriesArr[z].user.givenName+ " " +entriesArr[z].user.familyName %></td>
+    36|             </tr>
+    37|             <% }} %>
+Object Thu Jan 22 2015 14:06:48 GMT+0100 (CET) has no method 'substring'
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:5:1878)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 13:33:57 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:33:56 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1925 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/9CD4D260-3215-456A-A152-F0E89CB2ACDB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 13:34:08 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 14:34:08 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1925 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/9CD4D260-3215-456A-A152-F0E89CB2ACDB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 14:17:35 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:17:35 GMT+0100 (CET)] "GET /entries/A6151EE2-2171-465A-812A-A374FBBEFF27/remove 1.1" 500 2521 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:3
+    1| <div class="jumbotron">
+    2|     <h3>Zgłoszenie do regat</h3>
+ >> 3|     <p><%= event.name %> | <%= competition.name %> (<%= competition.description %>)</p>
+    4| </div>
+    5| <div class="panel panel-default" style="width:70%; float:left;">
+    6|     <form action="/entries/<%= event.id + '/' + competition.id %>/createEntry" method="POST">
+Cannot read property 'name' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:2:2624)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 14:17:38 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:17:38 GMT+0100 (CET)] "GET /entries/A6151EE2-2171-465A-812A-A374FBBEFF27/remove 1.1" 500 2521 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:3
+    1| <div class="jumbotron">
+    2|     <h3>Zgłoszenie do regat</h3>
+ >> 3|     <p><%= event.name %> | <%= competition.name %> (<%= competition.description %>)</p>
+    4| </div>
+    5| <div class="panel panel-default" style="width:70%; float:left;">
+    6|     <form action="/entries/<%= event.id + '/' + competition.id %>/createEntry" method="POST">
+Cannot read property 'name' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:2:2624)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 14:17:41 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:17:41 GMT+0100 (CET)] "GET /entries/BF1FC068-CAC6-4163-9196-80DBE59CD1EA/remove 1.1" 500 2521 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:3
+    1| <div class="jumbotron">
+    2|     <h3>Zgłoszenie do regat</h3>
+ >> 3|     <p><%= event.name %> | <%= competition.name %> (<%= competition.description %>)</p>
+    4| </div>
+    5| <div class="panel panel-default" style="width:70%; float:left;">
+    6|     <form action="/entries/<%= event.id + '/' + competition.id %>/createEntry" method="POST">
+Cannot read property 'name' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:2:2624)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 14:18:33 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:18:33 GMT+0100 (CET)] "GET /entries/BF1FC068-CAC6-4163-9196-80DBE59CD1EA/remove 1.1" 500 2522 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:3
+    1| <div class="jumbotron">
+    2|     <h3>Zgłoszenie do regat</h3>
+ >> 3|     <p><%= event.name %> | <%= competition.name %> (<%= competition.description %>)</p>
+    4| </div>
+    5| <div class="panel panel-default" style="width:70%; float:left;">
+    6|     <form action="/entries/<%= event.id + '/' + competition.id %>/createEntry" method="POST">
+Cannot read property 'name' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:2624)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 14:18:35 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:18:35 GMT+0100 (CET)] "GET /entries/BF1FC068-CAC6-4163-9196-80DBE59CD1EA/remove 1.1" 500 2522 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:3
+    1| <div class="jumbotron">
+    2|     <h3>Zgłoszenie do regat</h3>
+ >> 3|     <p><%= event.name %> | <%= competition.name %> (<%= competition.description %>)</p>
+    4| </div>
+    5| <div class="panel panel-default" style="width:70%; float:left;">
+    6|     <form action="/entries/<%= event.id + '/' + competition.id %>/createEntry" method="POST">
+Cannot read property 'name' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:2624)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 14:19:16 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:19:15 GMT+0100 (CET)] "GET /entries/6F2F98F4-1C13-459E-9BF3-BD227288D128/remove 1.1" 500 2522 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: ejs:3
+    1| <div class="jumbotron">
+    2|     <h3>Zgłoszenie do regat</h3>
+ >> 3|     <p><%= event.name %> | <%= competition.name %> (<%= competition.description %>)</p>
+    4| </div>
+    5| <div class="panel panel-default" style="width:70%; float:left;">
+    6|     <form action="/entries/<%= event.id + '/' + competition.id %>/createEntry" method="POST">
+Cannot read property 'name' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:2624)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 22 Jan 2015 14:19:31 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:19:31 GMT+0100 (CET)] "GET /entries/6F2F98F4-1C13-459E-9BF3-BD227288D128/remove 1.1" 500 1847 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: Partial template "app/views/entries/remove" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 22 Jan 2015 14:21:23 GMT] ERROR Worker 7385 died.
+[Thu, 22 Jan 2015 14:21:44 GMT] ERROR Worker 7386 died.
+[Thu, 22 Jan 2015 14:23:07 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:23:07 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/A6151EE2-2171-465A-812A-A374FBBEFF27/remove 1.1" 500 2017 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Object #<Object> has no method 'redirect'
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:50:12
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:554:9
+    at utils.mixin.remove (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:218:5)
+    at Function.obj.remove (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:550:27)
+    at remove (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:49:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 14:23:32 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:23:32 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/A6151EE2-2171-465A-812A-A374FBBEFF27/remove 1.1" 500 2017 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Object #<Object> has no method 'redirect'
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:50:12
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:554:9
+    at utils.mixin.remove (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:218:5)
+    at Function.obj.remove (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:550:27)
+    at remove (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:49:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 14:23:33 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:23:33 GMT+0100 (CET)] "GET /entries/undefined 1.1" 500 1633 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot call method 'getEventRecords' of undefined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:22:16)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 14:24:03 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:24:03 GMT+0100 (CET)] "GET /entries/undefined 1.1" 500 1633 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot call method 'getEventRecords' of undefined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:22:16)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 14:24:16 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 15:24:16 GMT+0100 (CET)] "GET /entries/undefined 1.1" 500 1633 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+TypeError: Cannot call method 'getEventRecords' of undefined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:22:16)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 22 Jan 2015 15:02:37 GMT] ERROR 127.0.0.1 - - [Thu Jan 22 2015 16:02:37 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/show 1.1" 500 1845 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.91 Safari/537.36"
+Error: Partial template "app/views/entries/show" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)

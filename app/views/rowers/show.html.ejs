@@ -1,0 +1,18 @@
+<div class="hero-unit">
+  <h2 class="id"><%= rower.id %></h2>
+  <%- linkTo('Edit this rower', editRowerPath(params.id), {class: 'btn pull-right'}); %>
+  <%- linkTo('Back to list', rowerPath(''), {class: 'btn pull-right'}); %>
+</div>
+
+<h2>Rower Properties</h2>
+<% for(var i in rower) { -%>
+<% if(i !== 'saved') { -%>
+<div class="row list-item">
+  <div class="span4">
+    <h3><%= i %></h3>
+  </div>
+  <div class="span8">
+    <h3><i class="icon-list-alt"></i><span class="<%= i %>"><%= rower[i] %></span></h3>
+  </div>
+</div>
+<% } -%><% } -%>

@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <h1>Entries.js</h1>
+    <p>System zgłoszeń do wydarzeń sportowych.</p>
+
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h3 class="page-header">Zaloguj się</h3>
+        <% if(!locals.user) { %>
+            <p>Aby rozpocząć korzystanie z systemu i przystąpić do zgłoszeń, zaloguj się przy pomocy danych z systemu zarządzania licencjami.</p>
+            <a href="<%= loginPath %> " class="btn btn-primary btn-lg">Zaloguj &raquo;</a>
+        <% } else { %>
+            <p>Jesteś już zalogowany. Możesz przystąpić do wyboru wydarzenia, a następnie zgłoszenia składu osady.</p>
+            <a href="<%= logoutPath %> " class="btn btn-primary btn-lg">Wyloguj &raquo;</a>
+        <% } %>
+    </div>
+    <div class="col-md-6">
+        <h3 class="page-header">Wybierz i zgłoś</h3>
+        <p>Aby dokonać zgłoszenia, wybierz wydarzenie do którego chcesz zgłosić zawodników, a następnie wybierz składy osad.</p>
+        <a href="/events/" class="btn btn-primary btn-lg">Wybierz wydarzenie &raquo;</a>
+    </div>
+
+</div>

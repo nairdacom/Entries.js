@@ -1,0 +1,56 @@
+<%= partial('layout_header'); %>
+  <body>
+    <% if(typeof currentUser!='undefined') {locals.user = currentUser;}  %>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+          
+        <div class="navbar-header">
+          <span class="navbar-brand glyphicon glyphicon-cloud-upload"></span>
+          <%- linkTo('Entries.js', mainsPath, {class: 'navbar-brand'}) %>
+        </div>
+          
+        <ul class="nav navbar-nav">
+          <li><%- linkTo('Home', mainsPath) %></li>
+          <% if(locals.user) { %>
+              <li><%- linkTo('Wydarzenia', '/events/') %></li>
+              <li><%- linkTo('Zawodnicy', '/rowers/') %></li>
+              <% if(user.isAdmin){ %>
+                <li><%- linkTo('Konkurencje', '/competitions/') %></li>
+                <li><%- linkTo('Użytkownicy', '/users/') %></li>
+              <% } %>
+          <% } %>
+          <li><%- linkTo('Kontakt','/contact') %></li>
+        </ul>
+          
+        <div class="navbar-right">
+          <% if(locals.user){ %>
+            
+            <ul class="nav navbar-nav" >
+                <li><a href="/users/<%= user.id %>/edit">Zalogowany jako: <b><%= user.username %></b></a></li>
+                <li><%- linkTo(' Wyloguj', logoutPath) %> </li> 
+            </ul>
+            
+          <% } else { %>
+            <ul class="nav navbar-nav">
+                <li><%- linkTo('Zaloguj', loginPath) %></li>
+            </ul>
+          <% } %>
+      </div>
+      </div>
+    </div>
+    <div class="container" style="padding-top:80px;">
+      <%- displayFlash(flash); %>
+      <%- render(); %>
+    </div>
+    <footer id="footer">
+      <div class="container">
+        <p style="margin-top:20px;">
+          <% var dd = new Date(); %> <%- dd.getFullYear() %> &copy; Adrian Moczulski
+          <img src="/img/nodejs-logo.svg" alt="" class="node-logo"/>
+        </p>
+        
+      </div>  
+    </footer>
+  </body>
+<%= partial('layout_footer'); %>
+

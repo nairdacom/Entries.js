@@ -1,0 +1,336 @@
+[Thu, 15 Jan 2015 09:19:41 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:19:41 GMT+0100 (CET)] "GET /entries 1.1" 500 2529 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: ejs:5
+    3|     <p>Przeglądaj wydarzenia. Wybierz interesujące, aby dokonać zgłoszeń.</p>
+    4| </div>
+ >> 5| <% if(user.isAdmin) { %> <%- linkTo('Dodaj wydarzenie', addEventPath, {class: 'btn btn-lg btn-primary pull-right'}); %> <% } %>
+    6| <div class="panel panel-default" style="width:75%;" >
+    7|   <div class="panel-heading">Oznaczenia zgłoszeń</div>
+    8|   <div class="panel-body">
+user is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:9:1142)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:20:34 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:20:34 GMT+0100 (CET)] "GET /entries 1.1" 500 2275 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: ejs:16
+    14| </div>
+    15| <table id="events-list" class="table table-striped table-hover">
+ >> 16| <% if (events) { %>
+    17|   <tr>
+    18|     <th>&nbsp;</th>
+    19|     <th>Nazwa</th>
+events is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:9:1142)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:24:14 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:24:14 GMT+0100 (CET)] "GET /entries 1.1" 500 2537 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: ejs:5
+    3|     <p>Przeglądaj wydarzenia. Wybierz interesujące, aby dokonać zgłoszeń.</p>
+    4| </div>
+ >> 5| <% if(user.isAdmin) { %> <%- linkTo('Dodaj wydarzenie', addEventPath, {class: 'btn btn-lg btn-primary pull-right'}); %> <% } %>
+    6| <div class="panel panel-default" style="width:75%;" >
+    7|   <div class="panel-heading">Oznaczenia zgłoszeń</div>
+    8|   <div class="panel-body">
+addEventPath is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:9:1142)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:24:23 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:24:23 GMT+0100 (CET)] "GET /entries 1.1" 500 2537 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: ejs:5
+    3|     <p>Przeglądaj wydarzenia. Wybierz interesujące, aby dokonać zgłoszeń.</p>
+    4| </div>
+ >> 5| <% if(user.isAdmin) { %> <%- linkTo('Dodaj wydarzenie', addEventPath, {class: 'btn btn-lg btn-primary pull-right'}); %> <% } %>
+    6| <div class="panel panel-default" style="width:75%;" >
+    7|   <div class="panel-heading">Oznaczenia zgłoszeń</div>
+    8|   <div class="panel-body">
+addEventPath is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:9:1142)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:26:38 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:26:37 GMT+0100 (CET)] "GET /entries/sdfdfsdf 1.1" 500 2275 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: ejs:16
+    14| </div>
+    15| <table id="events-list" class="table table-striped table-hover">
+ >> 16| <% if (events) { %>
+    17|   <tr>
+    18|     <th>&nbsp;</th>
+    19|     <th>Nazwa</th>
+events is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:9:1142)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:27:56 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:27:56 GMT+0100 (CET)] "GET /events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1925 "http://localhost:4000/events/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:28:29 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:28:29 GMT+0100 (CET)] "GET /events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1925 "http://localhost:4000/events/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:28:35 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:28:35 GMT+0100 (CET)] "GET /events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1925 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:28:49 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:28:49 GMT+0100 (CET)] "GET /events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1928 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Unexpected token ILLEGAL
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:28:50 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:28:49 GMT+0100 (CET)] "GET /events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1928 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+SyntaxError: Unexpected token ILLEGAL
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:29:33 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:29:33 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 2275 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: ejs:16
+    14| </div>
+    15| <table id="events-list" class="table table-striped table-hover">
+ >> 16| <% if (events) { %>
+    17|   <tr>
+    18|     <th>&nbsp;</th>
+    19|     <th>Nazwa</th>
+events is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:9:1142)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:29:36 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:29:36 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 2275 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: ejs:16
+    14| </div>
+    15| <table id="events-list" class="table table-striped table-hover">
+ >> 16| <% if (events) { %>
+    17|   <tr>
+    18|     <th>&nbsp;</th>
+    19|     <th>Nazwa</th>
+events is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:9:1142)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Thu, 15 Jan 2015 09:32:53 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:32:53 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1601 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: event is not defined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:12:17)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 15 Jan 2015 09:32:56 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:32:56 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1601 "http://localhost:4000/events/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: event is not defined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:12:17)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 15 Jan 2015 09:32:58 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:32:58 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB 1.1" 500 1601 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+ReferenceError: event is not defined
+    at index (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:12:17)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Thu, 15 Jan 2015 09:56:59 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:56:59 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1721 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+No newEntry action on Entries controller.
+    at handleNoAction (/usr/local/lib/node_modules/geddy/lib/app/index.js:202:11)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:326:20
+    at b (domain.js:183:18)
+    at Domain.run (domain.js:123:23)
+    at Server.<anonymous> (/usr/local/lib/node_modules/geddy/lib/app/index.js:282:11)
+    at Server.emit (events.js:98:17)
+    at HTTPParser.parser.onIncoming (http.js:2113:12)
+    at HTTPParser.parserOnHeadersComplete [as onHeadersComplete] (http.js:122:23)
+    at Socket.socket.ondata (http.js:1971:22)
+    at TCP.onread (net.js:528:27)
+[Thu, 15 Jan 2015 09:57:51 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:57:51 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1850 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:58:23 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:58:23 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1850 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:58:24 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:58:24 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1850 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:58:25 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:58:25 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1850 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:58:39 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:58:39 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1850 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:58:43 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:58:43 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1850 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:59:10 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:59:10 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1850 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:59:13 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:59:13 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1850 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:59:14 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:59:14 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1850 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)
+[Thu, 15 Jan 2015 09:59:15 GMT] ERROR 127.0.0.1 - - [Thu Jan 15 2015 10:59:15 GMT+0100 (CET)] "GET /entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB/5C00AC85-B415-4A41-8A0D-838AD11DD563 1.1" 500 1850 "http://localhost:4000/entries/66AA6E3D-5CC5-44E6-A332-DA42DFABBCAB" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36"
+Error: Partial template "app/views/entries/new_entry" not found in app/views, app/views/entries and app/views/layouts
+    at Partial.getTemplateData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:85:15)
+    at Partial.render (/usr/local/lib/node_modules/geddy/lib/template/partial.js:95:29)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:140:15
+    at Array.forEach (native)
+    at Partial.renderChildren (/usr/local/lib/node_modules/geddy/lib/template/partial.js:139:16)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:100:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+    at Object.oncomplete (fs.js:108:15)

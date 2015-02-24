@@ -1,0 +1,38 @@
+<div class="jumbotron">
+    <h3>Wydarzenia</h3>
+    <p>Szczegóły wybranego wydarzenia.</p>
+</div>
+<h4 class="page-header"><%= event.name %></h4>
+<%- linkTo('Powrót', eventPath(''), {class: 'btn pull-right btn-primary'}); %>
+<% if(user.isAdmin) { %>
+<form id="event-form" class="form-horizontal" action="/events/<%= params.id %>?_method=PUT" method="POST">
+    <%- contentTag('button', 'Usuń', {type: 'submit', formaction: '/events/' + params.id + '?_method=DELETE', formmethod: 'POST', class: 'btn pull-right btn-danger', style: 'margin-right: 10px;'}) %>
+</form> <% } %>
+
+<% if(event.getStatus() == "active") { %>
+<%- linkTo('Zgłoś', '/entries/'+event.id, {class: 'btn pull-right btn-info', style: 'margin-right: 10px;'}); %>
+<% } else if (event.getStatus() == "onlyModify") { %>
+<%- linkTo('Modyfikuj zgłoszenia', '/entries/'+event.id, {class: 'btn pull-right btn-info', style: 'margin-right: 10px;'}); %>
+<% } if ((event.getStatus() == "finished")||(event.getStatus() == "onlyModify")) { %>
+<%- linkTo('Lista zgłoszeń', '/entries/'+event.id+'/show', {class: 'btn pull-right btn-success', style: 'margin-right: 10px;'}); %>
+<% } %>
+
+<h4><small>Właściwości</small></h4>
+<table class="table table-stripped" style="width:60%;">
+    <tr><td>Daty regat</td>
+        <td><%= event.eventStart.toLocaleDateString() + " - " + event.eventStop.toLocaleDateString() %></td></tr>
+    <tr><td>Daty zgłoszeń</td>
+        <td><%= event.entriesStart.toLocaleDateString() + " - " + event.entriesStop.toLocaleDateString() %></td></tr>
+    <tr><td>Data modyfikacji</td>
+        <td><%= event.modifyStop.toLocaleDateString() + "  " + event.modifyTimeStop.toLocaleTimeString() %></td></tr>
+    <tr><td>Dozwolone zgłoszenia mieszane</td>
+        <td><% if(event.clubOnly) { %> <span class="glyphicon glyphicon-remove"></span> nie <% } else { %> <span class="glyphicon glyphicon-ok"></span> tak <% } %></td></tr>
+    <tr><td>Dozwolone zgłoszenia bez licencji</td>
+        <td><% if(!event.freeList) { %> <span class="glyphicon glyphicon-remove"></span> nie <% } else { %> <span class="glyphicon glyphicon-ok"></span> tak <% } %></td></tr>
+    <tr><td>Aktualny status zgłoszeń</td>
+        <td style="color: <%= event.getStatusColor() %>"><span class="glyphicon glyphicon-record"></span> <%= event.getStatus() %></td></tr>
+</table>
+<h4 class="page-header">Konkurencje w tych zawodach</h4>
+<% for(var i = 0; i< competitions.length; i++) {  %>
+    <div class="btn  btn-lg" style="margin-right: 10px; margin-bottom: 10px;"> <%= competitions[i].number + " | " + competitions[i].competition.name %> </div>
+<% } %>

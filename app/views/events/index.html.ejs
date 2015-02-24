@@ -1,0 +1,42 @@
+<div class="jumbotron">
+    <h3>Wydarzenia</h3>
+    <p>Przeglądaj wydarzenia. Wybierz interesujące, aby dokonać zgłoszeń.</p>
+</div>
+<% if(user.isLockedOut){ %><div class="alert alert-danger">Twoje konto zostało zablokowane. Blokada spowodowana jest nieuregulowaniem należności za zgłoszenia.</div><% } %>
+<% if(user.isAdmin) { %> <%- linkTo('Dodaj wydarzenie', addEventPath, {class: 'btn btn-lg btn-primary pull-right'}); %> <% } %>
+<div class="panel panel-default" style="width:75%;" >
+  <div class="panel-heading">Oznaczenia zgłoszeń</div>
+  <div class="panel-body">
+    <span class="glyphicon glyphicon-record" style="color:#0b0;"></span> -  aktywne &emsp; | &emsp; 
+    <span class="glyphicon glyphicon-record" style="color:#bb0;"></span> -  tylko zmiany &emsp; | &emsp; 
+    <span class="glyphicon glyphicon-record" style="color:#b00;"></span> -  zakończone &emsp; | &emsp; 
+    <span class="glyphicon glyphicon-record" style="color:#00b;"></span> -  nierozpoczęte
+  </div>
+</div>
+<table id="events-list" class="table table-striped table-hover">
+<% if (events) { %>
+  <tr>
+    <th>&nbsp;</th>
+    <th>Nazwa</th>
+    <th>Data rozgrywki</th>
+    <th>Data zgłoszeń</th>
+    <th>Data zmian</th>
+  </tr>
+<% for (var i = 0, ii = events.length; i < ii; i++) { 
+    Date.prototype.toShortStringPL = function(){ return this.getDate() + "." + (this.getMonth()+1) + "." + this.getFullYear(); }
+    var eventStart = events[i].eventStart.toShortStringPL();
+    var eventStop = events[i].eventStop.toShortStringPL();
+    var entriesStart = events[i].entriesStart.toShortStringPL();
+    var entriesStop = events[i].entriesStop.toShortStringPL();
+    var modifyStop = events[i].modifyStop.toShortStringPL();
+%>
+  <tr id="event-<%= events[i].id; %>">
+    <td><span class="glyphicon glyphicon-record" style="color: <%= events[i].getStatusColor() %>"></span></td>
+    <td><%- linkTo(events[i].name, eventPath(events[i].id)); %></td>
+    <td><%- "<span style='float:left;'><small>od: </small>" + eventStart + "</span><span style='float:right;'><small>do: </small>" + eventStop + "</span>" %></td>
+    <td><%- "<span style='float:left;'><small>od: </small>" + entriesStart + "</span><span style='float:right;'><small>do: </small>" + entriesStop  + "</span>" %></td>
+    <td><%- "<span style='float:left;'><small>" + modifyStop + "</span><span style='float:right;'>" + events[i].modifyTimeStop.toLocaleTimeString() + "<small></span>" %></td>
+  </tr>
+<% } %>
+<% } %>
+</table>

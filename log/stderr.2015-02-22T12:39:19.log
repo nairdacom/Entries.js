@@ -1,0 +1,712 @@
+[Sat, 21 Feb 2015 11:57:38 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 12:57:38 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/F247C75F-4AE4-47F9-87DA-2168B3EBDA2C/edit 1.1" 500 2036 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: Object #<Object> has no method 'createCoachList'
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:69:16
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at edit (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:63:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Sat, 21 Feb 2015 12:07:16 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 13:07:16 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/F247C75F-4AE4-47F9-87DA-2168B3EBDA2C/edit 1.1" 500 2216 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: Object function toUpperCase() { [native code] } has no method 'search'
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:21:44
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at createCoachList (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:16:27)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:80:16
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at edit (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:74:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+[Sat, 21 Feb 2015 12:07:30 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 13:07:30 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/F247C75F-4AE4-47F9-87DA-2168B3EBDA2C/edit 1.1" 500 2184 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: Cannot call method 'push' of undefined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:21:80
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at createCoachList (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:16:27)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:80:16
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at edit (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:74:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+[Sat, 21 Feb 2015 12:40:35 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 13:40:35 GMT+0100 (CET)] "GET /events 1.1" 500 2556 "http://localhost:4000/login" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:5
+    3|     <p>Przeglądaj wydarzenia. Wybierz interesujące, aby dokonać zgłoszeń.</p>
+    4| </div>
+ >> 5| <% if(user.isAdmin) { %> <%- linkTo('Dodaj wydarzenie', addEventPath, {class: 'btn btn-lg btn-primary pull-right'}); %> <% } %>
+    6| <div class="panel panel-default" style="width:75%;" >
+    7|   <div class="panel-heading">Oznaczenia zgłoszeń</div>
+    8|   <div class="panel-body">
+Cannot read property 'isAdmin' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:9:1142)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 12:51:34 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 13:51:34 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/F247C75F-4AE4-47F9-87DA-2168B3EBDA2C/edit 1.1" 500 1921 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+SyntaxError: Unexpected string
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 12:51:44 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 13:51:43 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/F247C75F-4AE4-47F9-87DA-2168B3EBDA2C/edit 1.1" 500 1921 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+SyntaxError: Unexpected string
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 12:52:05 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 13:52:05 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/F247C75F-4AE4-47F9-87DA-2168B3EBDA2C/edit 1.1" 500 1921 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+SyntaxError: Unexpected string
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 12:52:08 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 13:52:07 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/F247C75F-4AE4-47F9-87DA-2168B3EBDA2C/edit 1.1" 500 1921 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+SyntaxError: Unexpected string
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 12:55:53 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 13:55:53 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/F247C75F-4AE4-47F9-87DA-2168B3EBDA2C/edit 1.1" 500 2103 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+ReferenceError: objs is not defined
+    at createCoachList (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:35:7)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:90:16
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:73:9)
+    at Object.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at Function.obj.first (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:356:18)
+    at edit (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/entries.js:84:23)
+    at callback [as last] (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at async.AsyncBase.next (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:123:12)
+    at /usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:155:54
+    at process._tickDomainCallback (node.js:486:13)
+[Sat, 21 Feb 2015 13:11:51 GMT] ERROR Worker 17316 died.
+[Sat, 21 Feb 2015 13:12:23 GMT] ERROR Worker 17317 died.
+[Sat, 21 Feb 2015 13:13:07 GMT] ERROR Worker 17318 died.
+[Sat, 21 Feb 2015 13:15:07 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:15:06 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/E84D32F0-7F65-46FB-8AF4-28B6B4186AC5/edit 1.1" 500 1925 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:17:54 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:17:54 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/E84D32F0-7F65-46FB-8AF4-28B6B4186AC5/edit 1.1" 500 1925 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+SyntaxError: Unexpected identifier
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:18:20 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:18:19 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/E84D32F0-7F65-46FB-8AF4-28B6B4186AC5/edit 1.1" 500 2701 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+ReferenceError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id, coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+coachChecked is not defined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:2:5318)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:25:55 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:25:54 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/E84D32F0-7F65-46FB-8AF4-28B6B4186AC5/edit 1.1" 500 2695 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+undefined is not a function
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:30:03 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:30:03 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2716 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:9:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:30:52 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:30:52 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:30:53 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:30:53 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:30:55 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:30:54 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:31:01 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:31:00 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:31:02 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:31:02 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:32:22 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:32:22 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2716 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:9:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:32:56 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:32:55 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2741 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% if(coachList!=undefined) for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:9:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:33:36 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:33:35 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2716 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:9:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:34:18 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:34:17 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:34:25 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:34:25 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:34:26 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:34:26 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:34:39 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:34:38 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:34:40 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:34:39 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:35:54 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:35:54 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:36:40 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:36:40 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:36:41 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:36:41 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:36:42 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:36:42 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:36:43 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:36:43 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:36:44 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:36:44 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:36:46 GMT] ERROR undefined - - [Sat Feb 21 2015 14:36:45 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:36:46 GMT] ERROR undefined - - [Sat Feb 21 2015 14:36:45 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:36:46 GMT] ERROR undefined - - [Sat Feb 21 2015 14:36:45 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:36:46 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:36:45 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:10:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:36:58 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:36:58 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 2717 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:69
+    67|             <div class="scroll-wrapper">
+    68|                 <% for (var i=0; i<coachList.length; i++) { %>
+ >> 69|                     <input type="checkbox" <%= coachChecked(coachList[i].id,coaches) %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+    70|                     <label for="<%= coachList[i].id %>" >
+    71|                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
+    72|                     </label><br/>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:11:436)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:38:12 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:38:11 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 1923 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+SyntaxError: Unexpected token if
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:38:13 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:38:13 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/77E7244A-4B0C-4B52-8CA8-88B2E2812733/edit 1.1" 500 1923 "http://localhost:4000/entries/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+SyntaxError: Unexpected token if
+    at Object.Function (<anonymous>)
+    at compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:90:10)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:25:18)
+    at ejs.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:24:22)
+    at Adapter.compile (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:138:35)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:42)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 13:42:02 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 14:42:02 GMT+0100 (CET)] "GET /entries/0E25E8CA-338A-4B04-BE4A-E56D47110451/show 1.1" 500 2452 "http://localhost:4000/events/0E25E8CA-338A-4B04-BE4A-E56D47110451" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: ejs:30
+    28|                 </td>
+    29|                 <td>
+ >> 30|                     <% for(var zNo = 0; zNo<entriesArr[z].coachList.length; zNo++) { %>
+    31|                         <%= entriesArr[z].coachList[zNo].lastName + " " + entriesArr[z].coachList[zNo].firstName + "; "  %>
+    32|                     <% } %>
+    33|                 </td>
+Cannot read property 'length' of undefined
+    at handleErr (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:58:15)
+    at Object.rethrow (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:41)
+    at eval (eval at <anonymous> (/usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:92:5), <anonymous>:2:2750)
+    at /usr/local/lib/node_modules/geddy/lib/template/engines/ejs.js:103:17
+    at ejs.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/ejs.js:28:10)
+    at Adapter.render (/usr/local/lib/node_modules/geddy/lib/template/adapters/index.js:159:24)
+    at Partial.renderSelf (/usr/local/lib/node_modules/geddy/lib/template/partial.js:130:36)
+    at handleData (/usr/local/lib/node_modules/geddy/lib/template/partial.js:99:16)
+    at /usr/local/lib/node_modules/geddy/lib/template/partial.js:117:9
+    at fs.js:272:14
+[Sat, 21 Feb 2015 14:10:16 GMT] ERROR Worker 17375 died.
+[Sat, 21 Feb 2015 14:13:10 GMT] ERROR Worker 17379 died.
+[Sat, 21 Feb 2015 14:13:25 GMT] ERROR Worker 17380 died.
+[Sat, 21 Feb 2015 14:16:38 GMT] ERROR 127.0.0.1 - - [Sat Feb 21 2015 15:16:38 GMT+0100 (CET)] "GET /users/AAE0C6D8-4F4C-49E1-B02A-64AFD6AA6537/lockChange 1.1" 500 2153 "http://localhost:4000/users/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36"
+TypeError: Object #<Object> has no method 'redirect'
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/users.js:31:24
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:522:9
+    at utils.mixin.update (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:175:7)
+    at Object.obj.update (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:511:27)
+    at Function.obj.save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:451:29)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:121:18
+    at doIt (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:408:13)
+    at association._commitAssociationChanges (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:412:5)
+    at save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:115:14)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/users.js:30:12
