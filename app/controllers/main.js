@@ -30,6 +30,7 @@ var Main = function () {
             console.log(err);
             console.log(db);
       });
+      console.log("\n\n-------- Debug Info --------\n\n");
       //debug mode
       
     User.first({id: this.session.get('userId')}, function (err, user) {
