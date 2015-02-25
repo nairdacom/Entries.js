@@ -26,7 +26,7 @@ var Main = function () {
       //debug mode
       console.log("\n\n-------- Debug Info --------\n\n");
       var mongo = geddy.model.adapters.mongo.client;
-      mongo.connect("mongodb://nairdacom:GDRKZ27g@ds049161.mongolab.com:49161/heroku_app34321694", function(err, db) {
+      mongo.connect("mongodb://nairdacom:GDRKZ27g@ds049161-a.mongolab.com:49161/heroku_app34321694", function(err, db) {
             console.log(err);
             console.log(db);
       });
