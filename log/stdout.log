@@ -1,4 +1,4 @@
-[Wed, 25 Feb 2015 00:31:50 GMT] INFO Server starting with config: {
+[Wed, 25 Feb 2015 00:43:00 GMT] INFO Server starting with config: {
   "environment": "production",
   "workers": 2,
   "port": 4000,
@@ -44,7 +44,7 @@
   },
   "sessions": {
     "store": "cookie",
-    "key": "sid",
+    "key": "did",
     "expiry": 1209600
   },
   "cookieSessionKey": "sdata",
@@ -55,8 +55,8 @@
     ]
   },
   "appName": "Geddy App",
-  "hostname": null,
-  "fullHostname": null,
+  "hostname": "0.0.0.0",
+  "fullHostname": "http://0.0.0.0:4000",
   "connectCompatibility": false,
   "mailer": null,
   "generatedByVersion": "13.0.7",
@@ -67,7 +67,7 @@
     "mongo": {
       "username": "entries-js",
       "dbname": "heroku_app34321694",
-      "prefix": null,
+      "prefix": "data/",
       "password": "GDRKZ27g",
       "host": "ds049161.mongolab.com",
       "port": 49161
@@ -91,6 +91,6 @@
   },
   "secret": "Cg4VQl0CdiTMPLXsOCQPNKgbnPDEPC5KcSqCf8uf7Rla7uTBm6G5vG9hQXU6kx1wGbl8m0YuP1n0uFESASKrTMTS9d7yNkGAFgthS7ScF4LwNOs59FdUKz1IDPctDe4m"
 }
-[Wed, 25 Feb 2015 00:31:50 GMT] INFO Creating 2 worker processes.
-[Wed, 25 Feb 2015 00:31:52 GMT] INFO Server worker running in production on port 4000 with a PID of: 1577
-[Wed, 25 Feb 2015 00:31:52 GMT] INFO Server worker running in production on port 4000 with a PID of: 1578
+[Wed, 25 Feb 2015 00:43:00 GMT] INFO Creating 2 worker processes.
+[Wed, 25 Feb 2015 00:43:02 GMT] INFO Server worker running in production on port 4000 with a PID of: 1631
+[Wed, 25 Feb 2015 00:43:02 GMT] INFO Server worker running in production on port 4000 with a PID of: 1630
