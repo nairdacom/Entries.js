@@ -22,6 +22,11 @@ var Main = function () {
   this.index = function (req, resp, params) {
     var self = this
       , User = geddy.model.User;
+    
+      //debug mode
+      console.log("\n\n-------- Debug Info --------\n\n");
+      //debug mode
+      
     User.first({id: this.session.get('userId')}, function (err, user) {
       var data = {
         user: null
