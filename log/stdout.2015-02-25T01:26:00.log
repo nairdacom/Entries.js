@@ -1,4 +1,4 @@
-[Wed, 25 Feb 2015 00:26:00 GMT] INFO Server starting with config: {
+[Tue, 24 Feb 2015 23:45:13 GMT] INFO Server starting with config: {
   "environment": "production",
   "workers": 2,
   "port": 4000,
@@ -43,9 +43,10 @@
     }
   },
   "sessions": {
-    "store": "cookie",
+    "store": "filesystem",
     "key": "sid",
-    "expiry": 1209600
+    "expiry": 1209600,
+    "filename": "_session_store.json"
   },
   "cookieSessionKey": "sdata",
   "i18n": {
@@ -61,17 +62,7 @@
   "mailer": null,
   "generatedByVersion": "13.0.7",
   "model": {
-    "defaultAdapter": "mongo"
-  },
-  "db": {
-    "mongo": {
-      "username": "entries-js",
-      "dbname": "heroku_app34321694",
-      "prefix": null,
-      "password": "GDRKZ27g",
-      "host": "ds049161.mongolab.com",
-      "port": 49161
-    }
+    "defaultAdapter": "filesystem"
   },
   "passport": {
     "successRedirect": "/",
@@ -91,6 +82,6 @@
   },
   "secret": "Cg4VQl0CdiTMPLXsOCQPNKgbnPDEPC5KcSqCf8uf7Rla7uTBm6G5vG9hQXU6kx1wGbl8m0YuP1n0uFESASKrTMTS9d7yNkGAFgthS7ScF4LwNOs59FdUKz1IDPctDe4m"
 }
-[Wed, 25 Feb 2015 00:26:00 GMT] INFO Creating 2 worker processes.
-[Wed, 25 Feb 2015 00:26:02 GMT] INFO Server worker running in production on port 4000 with a PID of: 1516
-[Wed, 25 Feb 2015 00:26:02 GMT] INFO Server worker running in production on port 4000 with a PID of: 1517
+[Tue, 24 Feb 2015 23:45:13 GMT] INFO Creating 2 worker processes.
+[Tue, 24 Feb 2015 23:45:13 GMT] INFO Server worker running in production on port 4000 with a PID of: 1328
+[Tue, 24 Feb 2015 23:45:13 GMT] INFO Server worker running in production on port 4000 with a PID of: 1327

@@ -39,7 +39,7 @@ var config = {
     mongo: {
       username: 'entries-js'
     , dbname: 'heroku_app34321694'
-    , prefix: null
+    , prefix: 'data'
     , password: 'GDRKZ27g'
     , host: 'ds049161.mongolab.com'
     , port: 49161
