@@ -9,7 +9,8 @@
     "passport-facebook": "0.1.x",
     "passport-yammer": "0.1.x",
     "bcrypt": "0.7.x",
-    "mongodb": "1.x"
+    "mongodb": "1.x",
+    "geddy": "0.11.x"
   },
   "devDependencies": {},
   "engines": {
