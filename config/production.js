@@ -37,12 +37,12 @@ var config = {
   }
 , db: {
     mongo: {
-      username: null
-    , dbname: 'production'
+      username: 'entries-js'
+    , dbname: 'heroku_app34321694'
     , prefix: null
-    , password: null
-    , host: 'localhost'
-    , port: 27017
+    , password: 'GDRKZ27g'
+    , host: 'ds049161.mongolab.com'
+    , port: 49161
     }
   }
 
