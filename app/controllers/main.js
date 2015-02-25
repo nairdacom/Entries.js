@@ -25,6 +25,19 @@ var Main = function () {
     
       //debug mode
       console.log("\n\n-------- Debug Info --------\n\n");
+      var adapter = model.createAdapter('mongo', {
+        username: 'entries-js'
+        , dbname: 'heroku_app34321694'
+        , prefix: 'data/'
+        , password: 'GDRKZ27g'
+        , host: 'ds049161.mongolab.com'
+        , port: 49161
+      });
+      
+      adapter.connect(function (err) {
+          if (err) throw new Error('Error: ' + err);
+          console.log('Database connection successful');
+      }
       //debug mode
       
     User.first({id: this.session.get('userId')}, function (err, user) {
