@@ -1,1 +1,1 @@
-web: geddy --environment development
+web: geddy --environment production

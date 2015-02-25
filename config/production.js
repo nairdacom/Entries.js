@@ -19,8 +19,8 @@
 var config = {
   appName: 'Geddy App'
 , detailedErrors: false
-//, hostname: null
-//, port: 4000
+, hostname: "0.0.0.0"
+, port: process.env.PORT || 4000
     
 /*, model: {
     defaultAdapter: 'filesystem'
@@ -44,6 +44,11 @@ var config = {
     , host: 'ds049161.mongolab.com'
     , port: 49161
     }
+  }
+, sessions: {
+    store: 'cookie'
+  , key: 'did'
+  , expiry: 14 * 24 * 60 * 60
   }
 
 /* // Using Postgres as the default, with only a Postgres DB
