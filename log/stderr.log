@@ -1,0 +1,108 @@
+[Thu, 26 Feb 2015 20:32:22 GMT] ERROR 127.0.0.1 - - [Thu Feb 26 2015 21:32:22 GMT+0100 (CET)] "GET /migrate 1.1" 500 2119 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.6 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.6"
+TypeError: Cannot read property 'User' of undefined
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:73:38
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at dbMigrate (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:60:26)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+[Thu, 26 Feb 2015 20:36:02 GMT] ERROR 127.0.0.1 - - [Thu Feb 26 2015 21:36:02 GMT+0100 (CET)] "GET /migrate 1.1" 500 2181 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.6 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.6"
+TypeError: Cannot call method 'apply' of undefined
+    at Object.obj.update (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:511:27)
+    at Function.obj.save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:451:29)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:121:18
+    at doIt (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:408:13)
+    at association._commitAssociationChanges (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:412:5)
+    at save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:115:14)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:74:22
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at dbMigrate (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:60:26)
+[Thu, 26 Feb 2015 20:36:09 GMT] ERROR 127.0.0.1 - - [Thu Feb 26 2015 21:36:09 GMT+0100 (CET)] "GET /migrate 1.1" 500 2084 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.6 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.6"
+TypeError: Cannot call method 'apply' of undefined
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at dbMigrate (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:60:26)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+[Thu, 26 Feb 2015 20:36:11 GMT] ERROR 127.0.0.1 - - [Thu Feb 26 2015 21:36:11 GMT+0100 (CET)] "GET /migrate 1.1" 500 2084 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.6 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.6"
+TypeError: Cannot call method 'apply' of undefined
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at dbMigrate (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:60:26)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+[Thu, 26 Feb 2015 20:36:12 GMT] ERROR 127.0.0.1 - - [Thu Feb 26 2015 21:36:12 GMT+0100 (CET)] "GET /migrate 1.1" 500 2084 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.6 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.6"
+TypeError: Cannot call method 'apply' of undefined
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at dbMigrate (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:60:26)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+[Thu, 26 Feb 2015 20:36:13 GMT] ERROR 127.0.0.1 - - [Thu Feb 26 2015 21:36:13 GMT+0100 (CET)] "GET /migrate 1.1" 500 2084 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.6 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.6"
+TypeError: Cannot call method 'apply' of undefined
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at dbMigrate (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:60:26)
+    at callback (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:356:24)
+    at utils.mixin._handleAction (/usr/local/lib/node_modules/geddy/lib/controller/base_controller.js:370:7)
+    at cb [as callback] (/usr/local/lib/node_modules/geddy/lib/app/index.js:105:36)
+    at async.Initializer.complete (/usr/local/lib/node_modules/geddy/node_modules/utilities/lib/async.js:293:10)
+    at /usr/local/lib/node_modules/geddy/lib/app/index.js:116:21
+    at /usr/local/lib/node_modules/geddy/lib/controller/init.js:111:9
+    at localCallback (/usr/local/lib/node_modules/geddy/lib/sessions/index.js:100:9)
+    at /usr/local/lib/node_modules/geddy/lib/sessions/stores/filesystem.js:58:7
+[Thu, 26 Feb 2015 20:37:26 GMT] ERROR 127.0.0.1 - - [Thu Feb 26 2015 21:37:25 GMT+0100 (CET)] "GET /migrate 1.1" 500 2181 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.6 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.6"
+TypeError: Cannot call method 'apply' of undefined
+    at Object.obj.update (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:511:27)
+    at Function.obj.save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:451:29)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:121:18
+    at doIt (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:408:13)
+    at association._commitAssociationChanges (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:412:5)
+    at save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:115:14)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:74:22
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at dbMigrate (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:60:26)
+[Thu, 26 Feb 2015 20:38:32 GMT] ERROR 127.0.0.1 - - [Thu Feb 26 2015 21:38:32 GMT+0100 (CET)] "GET /migrate 1.1" 500 2181 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.6 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.6"
+TypeError: Cannot call method 'apply' of undefined
+    at Object.obj.update (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:511:27)
+    at Function.obj.save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:451:29)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:121:18
+    at doIt (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:408:13)
+    at association._commitAssociationChanges (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:412:5)
+    at save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:115:14)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:75:22
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at dbMigrate (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:60:26)
+[Thu, 26 Feb 2015 20:43:38 GMT] ERROR 127.0.0.1 - - [Thu Feb 26 2015 21:43:38 GMT+0100 (CET)] "GET /migrate 1.1" 500 2181 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.5.6 (KHTML, like Gecko) Version/8.0.5 Safari/600.5.6"
+TypeError: Cannot call method 'apply' of undefined
+    at Object.obj.update (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:511:27)
+    at Function.obj.save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:451:29)
+    at /usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:121:18
+    at doIt (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:408:13)
+    at association._commitAssociationChanges (/usr/local/lib/node_modules/geddy/node_modules/model/lib/association/index.js:412:5)
+    at save (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:115:14)
+    at /Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:74:34
+    at utils.mixin.load (/usr/local/lib/node_modules/geddy/node_modules/model/lib/adapters/memory/index.js:132:7)
+    at Function.obj.all (/usr/local/lib/node_modules/geddy/node_modules/model/lib/index.js:394:25)
+    at dbMigrate (/Users/nairdacom/Documents/Autorskie/Entries.js/app/controllers/main.js:60:26)

@@ -44,6 +44,8 @@ router.get('/login').to('Main.login');
 router.get('/logout').to('Main.logout');
 router.get('/contact').to('Main.contact');
 
+///router.get('/migrate').to('Main.dbMigrate');
+
 router.post('/rowers/import').to('Rowers.import');
 
 router.post('/auth/local').to('Auth.local');
