@@ -11,6 +11,7 @@ var Events = function () {
       }
       for(var i =0; i<events.length; i++){
           events[i].statusColor = events[i].getStatusColor();
+          console.log(events[i]);
       }
       self.respond({events:events, params:params});
     });
