@@ -9,7 +9,10 @@ var Events = function () {
       if (err) {
         throw err;
       }
-      self.respondWith(events, {type:'Event'});
+      for(var i =0; i<events.length; i++){
+          events[i].statusColor = events[i].getStatusColor();
+      }
+      self.respondWith({events:events, params:params});
     });
   };
 
