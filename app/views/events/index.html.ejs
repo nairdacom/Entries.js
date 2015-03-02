@@ -31,7 +31,7 @@
     var modifyStop = events[i].modifyStop.toShortStringPL();
 %>
   <tr id="event-<%= events[i].id; %>">
-    <td><span class="glyphicon glyphicon-record" style="color: <%= events[i].statusColor %><% } %>"></span></td>
+    <td><span class="glyphicon glyphicon-record" style="color: <%= events[i].statusColor %>"></span></td>
     <td><%- linkTo(events[i].name, eventPath(events[i].id)); %></td>
     <td><%- "<span style='float:left;'><small>od: </small>" + eventStart + "</span><span style='float:right;'><small>do: </small>" + eventStop + "</span>" %></td>
     <td><%- "<span style='float:left;'><small>od: </small>" + entriesStart + "</span><span style='float:right;'><small>do: </small>" + entriesStop  + "</span>" %></td>
