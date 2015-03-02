@@ -12,7 +12,7 @@ var Events = function () {
       for(var i =0; i<events.length; i++){
           events[i].statusColor = events[i].getStatusColor();
       }
-      self.respondWith({events:events, params:params});
+      self.respond({events:events, params:params});
     });
   };
 
