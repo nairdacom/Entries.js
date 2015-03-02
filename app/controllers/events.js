@@ -6,9 +6,6 @@ var Events = function () {
     var self = this;
     this.user = this.session.get('user');
     geddy.model.Event.all( {  }, { sort: { eventStart:'desc' } }, function(err, events) {
-      if (err) {
-        throw err;
-      }
       for(var i =0; i<events.length; i++){
           events[i].statusColor = events[i].getStatusColor();
           console.log(events[i]);
