@@ -37,7 +37,7 @@ var Events = function () {
         
     }*/
       
-    for(var i = 0; i < params.competitions.length; i++){
+   /* for(var i = 0; i < params.competitions.length; i++){
       geddy.model.Competition.first(params.competitions[i], function(err, competition){
         if(competition){
             evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (i+1) });
@@ -52,12 +52,49 @@ var Events = function () {
       event.save(function(err, data) {
         if (err) { throw err; }
         for(var i = 0; i < params.competitions.length; i++){
+            console.log(evRecs);
+            console.log("-----------------------działa---------------------");
+            console.log(event);
             event.addEventRecord(evRecs[i]);
         }
         event.save();
         self.respondWith(event, {status: err});
       });
+    }*/
+      
+      for(var i = 0; i < params.competitions.length; i++){
+      geddy.model.Competition.first(params.competitions[i], function(err, competition){
+        if(competition){
+            evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (i+1) });
+            evRecs[i].save();
+        }
+      });
     }
+    if (!event.isValid()) {
+      this.respondWith(event);
+    }
+    else {
+      event.save(function(err, data) {
+        if (err) { throw err; }
+        for(var i = 0; i < params.competitions.length; i++){
+            geddy.model.Competition.first(params.competitions[i], function(err, competition){
+                if(competition){
+                    evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (i+1) });
+                    evRecs[i].save(function(err,dat){
+                        event.addEventRecord(dat);
+                        console.log(dat);
+                        event.save(function(err,data){
+                            if(i==params.competitions.length)
+                                self.respondWith(event, {status: err});
+                        });
+                    })};
+                }
+              );
+        }
+      });
+    }
+      
+      
   };
 
   this.show = function (req, resp, params) {
@@ -73,8 +110,8 @@ var Events = function () {
       }
       else {
         var recs = new Array();
-        event.getEventRecords(function(err,evRecs){ recs  = evRecs; });
-        self.respond({event:event, competitions: recs});
+        event.getEventRecords(function(err,evRecs){ console.log(evRecs); recs  = evRecs; self.respond({event:event, competitions: recs}); });
+        
       }
     });
   };

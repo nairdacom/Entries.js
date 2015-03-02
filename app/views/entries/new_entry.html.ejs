@@ -1,3 +1,12 @@
+<%   
+  function coachChecked(currentCID, coachList){
+      for(var i=0; i<coachList.length; i++){
+        if(currentCID == coachList[i].id) return " checked ";
+      }
+      return "";
+  }
+%>
+
 <div class="jumbotron">
     <h3>Zgłoszenie do regat</h3>
     <p><%= event.name %> | <%= competition.name %> (<%= competition.description %>)</p>
@@ -66,7 +75,6 @@
         <div class="panel-body">
             <div class="scroll-wrapper">
                 <% for (var i=0; i<coachList.length; i++) { %>
-                <% console.log("\n\n\n"+coaches); %> 
                     <input type="checkbox" <% if((coaches!== undefined)&&(coaches!==null)){ %><%= coachChecked(coachList[i].id,coaches) %><% } %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
                     <label for="<%= coachList[i].id %>" >
                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
@@ -78,14 +86,7 @@
         </div>
     </div>
 </form>
-<%   
-    coachChecked = function(currentCID, coachList){
-      for(var i=0; i<coachList.length; i++){
-        if(currentCID === coachList[i].id) return " checked ";
-      }
-      return "";
-  }
-%>
+
 <!--<div class="panel panel-info" style="width:25%; float:left; margin-left:5%;">
     <div class="panel-heading" style="color:#fff;">Informacja</div>
     <div class="panel-body">Pamiętaj, że każde Twoje zgłoszenie możesz usunąć lub zmienić w terminie zgłoszeń.<br/>

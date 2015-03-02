@@ -1,10 +1,10 @@
-[Thu, 26 Feb 2015 20:32:19 GMT] INFO Server starting with config: {
-  "environment": "development",
-  "workers": 1,
+[Sun, 01 Mar 2015 00:04:41 GMT] INFO Server starting with config: {
+  "environment": "production",
+  "workers": 2,
   "port": 4000,
   "spdy": null,
   "ssl": null,
-  "detailedErrors": true,
+  "detailedErrors": false,
   "requestTimeout": null,
   "flash": {
     "defaultClass": "alert",
@@ -21,20 +21,13 @@
       "info": "alert alert-block alert-info"
     }
   },
-  "debug": true,
+  "debug": false,
   "watch": {
-    "files": [
-      "/config",
-      "/lib",
-      "/app/controllers",
-      "/app/models",
-      "/app/views",
-      "/app/helpers"
-    ],
-    "includePattern": "\\.(js|coffee|css|less|scss)$",
-    "excludePattern": "\\.git|node_modules"
+    "files": [],
+    "includePattern": "",
+    "excludePattern": ""
   },
-  "rotateWorkers": false,
+  "rotateWorkers": true,
   "rotationWindow": 7200000,
   "rotationTimeout": 300000,
   "logDir": "/Users/nairdacom/Documents/Autorskie/Entries.js/log",
@@ -50,10 +43,9 @@
     }
   },
   "sessions": {
-    "store": "filesystem",
+    "store": "cookie",
     "key": "sid",
-    "expiry": 1209600,
-    "filename": "_session_store.json"
+    "expiry": 1209600
   },
   "cookieSessionKey": "sdata",
   "i18n": {
@@ -62,14 +54,24 @@
       "/Users/nairdacom/Documents/Autorskie/Entries.js/config/locales"
     ]
   },
-  "appName": "Geddy App (development)",
-  "hostname": null,
-  "fullHostname": null,
+  "appName": "Geddy App",
+  "hostname": "0.0.0.0",
+  "fullHostname": "http://0.0.0.0:4000",
   "connectCompatibility": false,
   "mailer": null,
   "generatedByVersion": "13.0.7",
   "model": {
-    "defaultAdapter": "filesystem"
+    "defaultAdapter": "mongo"
+  },
+  "db": {
+    "mongo": {
+      "username": "nairdacom",
+      "dbname": "entries-js",
+      "prefix": "data/",
+      "password": "GDRKZ27g",
+      "host": "ds047911.mongolab.com",
+      "port": 47911
+    }
   },
   "passport": {
     "successRedirect": "/",
@@ -89,34 +91,6 @@
   },
   "secret": "Cg4VQl0CdiTMPLXsOCQPNKgbnPDEPC5KcSqCf8uf7Rla7uTBm6G5vG9hQXU6kx1wGbl8m0YuP1n0uFESASKrTMTS9d7yNkGAFgthS7ScF4LwNOs59FdUKz1IDPctDe4m"
 }
-[Thu, 26 Feb 2015 20:32:19 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:32:20 GMT] INFO Server worker running in development on port 4000 with a PID of: 15123
-[Thu, 26 Feb 2015 20:32:43 GMT] INFO Code changed, killing 15123, cycling ...
-[Thu, 26 Feb 2015 20:32:43 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:32:43 GMT] INFO Server worker running in development on port 4000 with a PID of: 15127
-[Thu, 26 Feb 2015 20:34:01 GMT] INFO Code changed, killing 15127, cycling ...
-[Thu, 26 Feb 2015 20:34:01 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:34:01 GMT] INFO Server worker running in development on port 4000 with a PID of: 15129
-[Thu, 26 Feb 2015 20:35:17 GMT] INFO Code changed, killing 15129, cycling ...
-[Thu, 26 Feb 2015 20:35:17 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:35:18 GMT] INFO Server worker running in development on port 4000 with a PID of: 15130
-[Thu, 26 Feb 2015 20:37:04 GMT] INFO Code changed, killing 15130, cycling ...
-[Thu, 26 Feb 2015 20:37:04 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:37:04 GMT] INFO Server worker running in development on port 4000 with a PID of: 15132
-[Thu, 26 Feb 2015 20:37:22 GMT] INFO Code changed, killing 15132, cycling ...
-[Thu, 26 Feb 2015 20:37:22 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:37:22 GMT] INFO Server worker running in development on port 4000 with a PID of: 15133
-[Thu, 26 Feb 2015 20:38:29 GMT] INFO Code changed, killing 15133, cycling ...
-[Thu, 26 Feb 2015 20:38:29 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:38:29 GMT] INFO Server worker running in development on port 4000 with a PID of: 15135
-[Thu, 26 Feb 2015 20:42:38 GMT] INFO Code changed, killing 15135, cycling ...
-[Thu, 26 Feb 2015 20:42:38 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:42:38 GMT] INFO Code changed, killing 15136, cycling ...
-[Thu, 26 Feb 2015 20:42:38 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:42:39 GMT] INFO Server worker running in development on port 4000 with a PID of: 15137
-[Thu, 26 Feb 2015 20:43:37 GMT] INFO Code changed, killing 15137, cycling ...
-[Thu, 26 Feb 2015 20:43:37 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:43:37 GMT] INFO Server worker running in development on port 4000 with a PID of: 15138
-[Thu, 26 Feb 2015 20:43:47 GMT] INFO Code changed, killing 15138, cycling ...
-[Thu, 26 Feb 2015 20:43:47 GMT] INFO Creating 1 worker process.
-[Thu, 26 Feb 2015 20:43:48 GMT] INFO Server worker running in development on port 4000 with a PID of: 15139
+[Sun, 01 Mar 2015 00:04:41 GMT] INFO Creating 2 worker processes.
+[Sun, 01 Mar 2015 00:04:43 GMT] INFO Server worker running in production on port 4000 with a PID of: 18824
+[Sun, 01 Mar 2015 00:04:43 GMT] INFO Server worker running in production on port 4000 with a PID of: 18823
