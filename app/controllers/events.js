@@ -110,8 +110,11 @@ var Events = function () {
       }
       else {
         var recs = new Array();
-        event.getEventRecords(function(err,evRecs){ console.log(evRecs); recs  = evRecs; self.respond({event:event, competitions: recs}); });
-        
+        event.getEventRecords(function(err,evRecs){ 
+            console.log(evRecs); 
+            recs  = evRecs; 
+            self.respond({event:event, competitions: recs}); 
+        });
       }
     });
   };
