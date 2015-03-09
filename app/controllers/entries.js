@@ -64,18 +64,26 @@ var Entries = function () {
   };
 
   this.show = function (req, resp, params) {
+    console.log("test");
     var self = this;
     this.user = this.session.get('user');
     geddy.model.Event.first(params.eventId, function(err,data){
        self.event = data;
+       console.log(data);
        geddy.model.Entry.all(function(err,data){
          for(var z = 0; z< data.length; z++){
-           if(data[z].event.id == params.eventId){
-             if((data[z].user.club == self.user.club) || (self.user.isAdmin)) { self.entriesArr.push(data[z]); } 
+           console.log(data[z]);
+           if((data[z].event != null)&&(typeof data[z]!==undefined)){
+             if(data[z].event.id == params.eventId){
+               if((data[z].user.club == self.user.club) || (self.user.isAdmin)) { self.entriesArr.push(data[z]); } 
+             }
            }
          }
          if(self.event.getStatus()=="active") self.redirect("/events/"+this.event.id);
-         self.event.getEventRecords(function(err,evRecs){ self.competitions  = evRecs; self.respond({params: params}); });
+         self.event.getEventRecords(function(err,evRecs){ 
+             self.competitions  = evRecs; 
+             self.respond({params: params}); 
+         });
        });
     });
   };
@@ -184,9 +192,7 @@ var Entries = function () {
           geddy.model.Rower.first(params.rower, function(err,data){
             selfFunc.rowers.push(data);
             //utworzenie obiektu
-            console.log("-------------------jeden zawodnik");
             self.parseCoaches(params.coachList, function(list){
-                console.log("-------------------wywolanie callback");
                 var entryObj = geddy.model.Entry.create({rower:selfFunc.rowers, event:self.event, competition:self.competition, user:self.user, coachList:list});
                 entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
             });
@@ -203,11 +209,8 @@ var Entries = function () {
             entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
           });
         }
-    
-        
       });
     });
-    
   }
   
   this.updateEntry = function (req, resp, params) {
@@ -220,27 +223,39 @@ var Entries = function () {
     this.user = this.session.get('user');
     geddy.model.Event.first(params.eventId, function(err,data){
       self.event = data;
+      geddy.model.Competition.first(params.competitionId, function(err,data){
+        self.competition = data;
+        var selfFunc = self;
+        selfFunc.rowers = new Array();
+        selfFunc.coaches = new Array();
+        //zdefiniowanie, czy jeden zawodnik, czy wiecej
+        if(typeof params.rower === "string"){
+          geddy.model.Rower.first(params.rower, function(err,data){
+            selfFunc.rowers.push(data);
+            //utworzenie obiektu
+            self.parseCoaches(params.coachList, function(list){
+                var entryObj = geddy.model.Entry.create({rower:selfFunc.rowers, event:self.event, competition:self.competition, user:self.user, coachList:list});
+                entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
+            });
+          });
+        } else {
+          for(var rNo=0; rNo<params.rower.length; rNo++){
+            geddy.model.Rower.first(params.rower[rNo], function(err,data){
+              selfFunc.rowers.push(data);
+            });
+          }
+          //utworzenie obiektu
+          self.parseCoaches(params.coachList,function(list){ 
+            var entryObj = geddy.model.Entry.create({rower:selfFunc.rowers, event:self.event, competition:self.competition, user:self.user,coachList:params.coachList});
+            entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
+          });
+        }
+      });   
     });
-    geddy.model.Competition.first(params.competitionId, function(err,data){
-      self.competition = data;
-    });
-    var selfFunc = this;
-    this.rowers = new Array();
-    this.coaches = new Array();
-    //zdefiniowanie, czy jeden zawodnik, czy wiecej
-    if(typeof params.rower === "string"){
-      geddy.model.Rower.first(params.rower, function(err,data){
-        selfFunc.rowers.push(data);
-      });
-    }
-    else {
-      for(var rNo=0; rNo<params.rower.length; rNo++){
-        geddy.model.Rower.first(params.rower[rNo], function(err,data){
-          selfFunc.rowers.push(data);
-        });
-      }
-    }
-      
+    
+    
+    
+      /*
     if(typeof params.coachList === "string"){ 
         geddy.model.Rower.first(params.coachList, function(err,data){ selfFunc.coaches.push(data); }); 
     } else { 
@@ -252,7 +267,7 @@ var Entries = function () {
     entryObj.save();
       
     // przekierowanie
-    this.redirect("/entries/"+self.event.id);
+    this.redirect("/entries/"+self.event.id);*/
   }
 
 };
