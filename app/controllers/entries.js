@@ -64,15 +64,12 @@ var Entries = function () {
   };
 
   this.show = function (req, resp, params) {
-    console.log("test");
     var self = this;
     this.user = this.session.get('user');
     geddy.model.Event.first(params.eventId, function(err,data){
        self.event = data;
-       console.log(data);
        geddy.model.Entry.all(function(err,data){
          for(var z = 0; z< data.length; z++){
-           console.log(data[z]);
            if((data[z].event != null)&&(typeof data[z]!==undefined)){
              if(data[z].event.id == params.eventId){
                if((data[z].user.club == self.user.club) || (self.user.isAdmin)) { self.entriesArr.push(data[z]); } 

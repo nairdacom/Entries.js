@@ -63,24 +63,26 @@ var Events = function () {
       });
     }*/
       
-      for(var i = 0; i < params.competitions.length; i++){
+     /* for(var i = 0; i < params.competitions.length; i++){
       geddy.model.Competition.first(params.competitions[i], function(err, competition){
         if(competition){
             evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (i+1) });
             evRecs[i].save();
         }
       });
-    }
+    }*/
     if (!event.isValid()) {
       this.respondWith(event);
     }
     else {
       event.save(function(err, data) {
         if (err) { throw err; }
+        var z = 0;
         for(var i = 0; i < params.competitions.length; i++){
             geddy.model.Competition.first(params.competitions[i], function(err, competition){
                 if(competition){
-                    evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (i+1) });
+                    z++;
+                    evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (z) });
                     evRecs[i].save(function(err,dat){
                         event.addEventRecord(dat);
                         console.log(dat);
