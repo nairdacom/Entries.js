@@ -17,7 +17,7 @@ var Entries = function () {
     return 0;
   }
   this.createCoachList = function(clubOnly,callback){
-      if((!clubOnly)||(this.user.idAdmin)||(self.user.club.substr(0,3)=="SMS")){
+      if((!clubOnly)||(this.user.idAdmin)||(this.user.club.substr(0,3)=="SMS")){
         geddy.model.Rower.all(function(err,data){
           for(var i=0; i<data.length; i++){
             var rower = data[i];
