@@ -17,7 +17,7 @@ var Entries = function () {
     return 0;
   }
   this.createCoachList = function(clubOnly,callback){
-      if((!clubOnly)||(this.user.idAdmin)){
+      if((!clubOnly)||(this.user.idAdmin)||(this.user.club.substr(0,3)=="SMS")){
         geddy.model.Rower.all(function(err,data){
           for(var i=0; i<data.length; i++){
             var rower = data[i];
@@ -95,7 +95,7 @@ var Entries = function () {
         self.competition = data.competition;
         self.rowersList = data.rower;
         self.coaches = data.coachList;
-        if ((self.user.isAdmin) || (!self.event.clubOnly)){
+        if ((self.user.isAdmin) || (!self.event.clubOnly) || (self.user.club.substr(0,3)=="SMS")){
           self.createCoachList(false,function(){
             geddy.model.Rower.all(null, {sort:{lastName:'asc'}},function(err,data){
                 self.rowers = data;
@@ -132,7 +132,7 @@ var Entries = function () {
         self.event = data;
         geddy.model.Competition.first(params.competitionId, function(err,data){
             self.competition = data;
-            if ((self.user.isAdmin) || (!self.event.clubOnly)){
+            if ((self.user.isAdmin) || (!self.event.clubOnly) || (this.user.club.substr(0,3)=="SMS")){
                 self.createCoachList(false, function(){
                     geddy.model.Rower.all(null, {sort:{lastName:'asc'}},function(err,data){
                         self.rowers = data;
