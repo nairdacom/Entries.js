@@ -85,7 +85,6 @@ var Events = function () {
                     evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (z) });
                     evRecs[i].save(function(err,dat){
                         event.addEventRecord(dat);
-                        console.log(dat);
                         event.save(function(err,data){
                             if(i==params.competitions.length)
                                 self.respondWith(event, {status: err});
