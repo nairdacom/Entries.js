@@ -15,12 +15,21 @@ var Rowers = function () {
         });
     }
     else {
-        geddy.model.Rower.all({club:this.user.club},function(err, rowers) {
-          if (err) {
-            throw err;
-          }
-          self.respondWith(rowers, {type:'Rower'});
-        });
+        if(this.user.club.substr(0,3)=="SMS"){
+            geddy.model.Rower.all({sms:this.user.club},function(err, rowers) {
+              if (err) {
+                throw err;
+              }
+              self.respondWith(rowers, {type:'Rower'});
+            });
+        } else {
+            geddy.model.Rower.all({club:this.user.club},function(err, rowers) {
+              if (err) {
+                throw err;
+              }
+              self.respondWith(rowers, {type:'Rower'});
+            });
+        }
     }
     
   };
