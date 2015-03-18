@@ -79,6 +79,7 @@ var Entries = function () {
          if(self.event.getStatus()=="active") self.redirect("/events/"+this.event.id);
          self.event.getEventRecords(function(err,evRecs){ 
              self.competitions  = evRecs; 
+             self.competitions.sort(function(a, b) {return a.number - b.number;});
              self.respond({params: params}); 
          });
        });
