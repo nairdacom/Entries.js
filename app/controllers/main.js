@@ -34,7 +34,7 @@ var Main = function () {
       }
       self.respond(data, {
         format: 'html'
-      , template: 'app/views/main/index'
+      , template: 'app/views/main/index' 
       });
     });
   };

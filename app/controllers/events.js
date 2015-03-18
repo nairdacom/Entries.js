@@ -113,6 +113,7 @@ var Events = function () {
       else {
         var recs = new Array();
         event.getEventRecords(function(err,evRecs){ 
+	        evRecs.sort(function(a, b) {return a.number - b.number;});
             console.log(evRecs); 
             recs  = evRecs; 
             self.respond({event:event, competitions: recs}); 
