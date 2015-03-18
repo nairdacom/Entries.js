@@ -48,7 +48,10 @@ var Entries = function () {
              if((data[z].user.club == self.user.club) || (self.user.isAdmin)) { self.entriesArr.push(data[z]); } 
            }
          }
-        self.event.getEventRecords(function(err,evRecs){ self.competitions  = evRecs;  self.respond({params: params}); });
+        self.event.getEventRecords(function(err,evRecs){ 
+	      self.competitions  = evRecs;  
+	      self.competitions.sort(function(a, b) {return a.number - b.number;});
+	      self.respond( {params: params}); });
        });
     });
     
