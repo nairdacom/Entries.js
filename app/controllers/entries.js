@@ -255,15 +255,12 @@ var Entries = function () {
             });
           });
         } else {
-          for(var rNo=0; rNo<params.rower.length; rNo++){
-            geddy.model.Rower.first(params.rower[rNo], function(err,data){
-              selfFunc.rowers.push(data);
-            });
-          }
-          //utworzenie obiektu
-          self.parseCoaches(params.coachList,function(list){ 
-            var entryObj = geddy.model.Entry.create({rower:selfFunc.rowers, event:self.event, competition:self.competition, user:self.user,coachList:params.coachList});
-            entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
+          parseRowers(params.rower, function(parsedRowers){
+	          //utworzenie obiektu
+	          self.parseCoaches(params.coachList,function(list){ 
+	            var entryObj = geddy.model.Entry.create({rower:selfFunc.rowers, event:self.event, competition:self.competition, user:self.user,coachList:params.coachList});
+	            entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
+	          });
           });
         }
       });   
