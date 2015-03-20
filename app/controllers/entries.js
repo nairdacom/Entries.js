@@ -159,12 +159,14 @@ var Entries = function () {
       var pushed = false;
       var responses = 0;
       
-      console.log("######### Typ parametru: "+ (typeof ids));
       if(typeof ids === "undefined") { callback(list); pushed=true; }
       else if(typeof ids === "string"){
+	      console.log("######### Typ parametru: "+ (typeof ids));
           geddy.model.Rower.first(ids,function(err,data){
               list.push(data);
-              { pushed=true; callback(list); }
+              console.log(data);
+              pushed=true; 
+              callback(list);
           });
       } else {
       
