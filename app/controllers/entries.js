@@ -33,7 +33,7 @@ var Entries = function () {
             if(rower.licenceNo.toUpperCase().search("T") != -1) self.coachList.push(rower);
           }
           self.coachList.sort(compareLicence);
-          callback();
+          callback(self.coachList);
         });  
       }
       
