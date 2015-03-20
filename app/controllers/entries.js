@@ -164,7 +164,7 @@ var Entries = function () {
           geddy.model.Rower.first(ids,function(err,data){
               list.push(data);
               responses++;
-              { callback(list); pushed=true;  return 0; }
+              { pushed=true; callback(list); }
           });
       } else {
       
@@ -172,7 +172,7 @@ var Entries = function () {
           geddy.model.Rower.first(ids[i],function(err,data){
               list.push(data);
               responses++;
-              if((i==ids.length) && (!pushed) && (responses == ids.length)) { callback(list); pushed=true;  return 0; }
+              if((!pushed) && (responses == ids.length)) { pushed=true; callback(list); }
           }
       )}
       }
