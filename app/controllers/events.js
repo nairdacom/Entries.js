@@ -28,49 +28,6 @@ var Events = function () {
     var self = this
       , event = geddy.model.Event.create(params);
     var evRecs = new Array();
-    
-    
-    /*if (params.eventStart>params.eventStop) {
-        this.flash.error("Data początkowa musi być ustawiona przed datą końcową.");
-        console.log(event);
-        this.respondWith(event); 
-        return 1;
-        
-    }*/
-      
-   /* for(var i = 0; i < params.competitions.length; i++){
-      geddy.model.Competition.first(params.competitions[i], function(err, competition){
-        if(competition){
-            evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (i+1) });
-            evRecs[i].save();
-        }
-      });
-    }
-    if (!event.isValid()) {
-      this.respondWith(event);
-    }
-    else {
-      event.save(function(err, data) {
-        if (err) { throw err; }
-        for(var i = 0; i < params.competitions.length; i++){
-            console.log(evRecs);
-            console.log("-----------------------działa---------------------");
-            console.log(event);
-            event.addEventRecord(evRecs[i]);
-        }
-        event.save();
-        self.respondWith(event, {status: err});
-      });
-    }*/
-      
-     /* for(var i = 0; i < params.competitions.length; i++){
-      geddy.model.Competition.first(params.competitions[i], function(err, competition){
-        if(competition){
-            evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (i+1) });
-            evRecs[i].save();
-        }
-      });
-    }*/
     if (!event.isValid()) {
       this.respondWith(event);
     }
@@ -81,7 +38,10 @@ var Events = function () {
         for(var i = 0; i < params.competitions.length; i++){
             geddy.model.Competition.first(params.competitions[i], function(err, competition){
                 if(competition){
-                    z++;
+                    //gettinh competition number
+                    for(z=0; z < params.competitions.length; z++){
+	                    if(competition.id == params.competitions[z]) break;
+                    }
                     evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (z) });
                     evRecs[i].save(function(err,dat){
                         event.addEventRecord(dat);
