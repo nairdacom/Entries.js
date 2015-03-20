@@ -256,7 +256,7 @@ var Entries = function () {
           parseRowers(params.rower, function(parsedRowers){
 	          //utworzenie obiektu
 	          self.parseCoaches(params.coachList,function(list){ 
-	            var entryObj = geddy.model.Entry.create({rower:parsedRowers, event:self.event, competition:self.competition, user:self.user,coachList:params.coachList});
+	            var entryObj = geddy.model.Entry.create({rower:parsedRowers, event:self.event, competition:self.competition, user:self.user,coachList:list});
 	            entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
 	          });
           });
