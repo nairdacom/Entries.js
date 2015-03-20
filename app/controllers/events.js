@@ -42,7 +42,7 @@ var Events = function () {
                     for(z=0; z < params.competitions.length; z++){
 	                    if(competition.id == params.competitions[z]) break;
                     }
-                    evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (z) });
+                    evRecs[i] = geddy.model.EventRecord.create({competition: competition, number: (z+1) });
                     evRecs[i].save(function(err,dat){
                         event.addEventRecord(dat);
                         event.save(function(err,data){
