@@ -17,7 +17,7 @@ var Entries = function () {
     return 0;
   }
   this.createCoachList = function(clubOnly,callback){
-      if((!clubOnly)||(this.user.idAdmin)||(this.user.club.substr(0,3)=="SMS")){
+      if((!clubOnly)||(this.user.isAdmin)||(this.user.club.substr(0,3)=="SMS")){
         geddy.model.Rower.all(function(err,data){
           for(var i=0; i<data.length; i++){
             var rower = data[i];
@@ -200,11 +200,6 @@ var Entries = function () {
             });
           });
         } else {
-          /*for(var rNo=0; rNo<params.rower.length; rNo++){
-            geddy.model.Rower.first(params.rower[rNo], function(err,data){
-              selfFunc.rowers.push(data);
-            });
-          }*/
           parseRowers(params.rower, function(parsedRowers){
 	          //utworzenie obiektu
 	          self.parseCoaches(params.coachList,function(list){ 
