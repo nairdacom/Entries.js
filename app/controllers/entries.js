@@ -160,6 +160,7 @@ var Entries = function () {
       var responses = 0;
       
       if(typeof ids === "undefined") { callback(list); pushed=true; }
+      console.log("######### Typ parametru: "+typeof ids);
       else if(typeof ids === "string"){
           geddy.model.Rower.first(ids,function(err,data){
               list.push(data);
