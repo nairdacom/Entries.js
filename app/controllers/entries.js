@@ -159,11 +159,10 @@ var Entries = function () {
       var pushed = false;
       var responses = 0;
       
-      if(typeof ids === "undefined") { callback(list); pushed=true; return 0; }
+      if(typeof ids === "undefined") { callback(list); pushed=true; }
       else if(typeof ids === "string"){
           geddy.model.Rower.first(ids,function(err,data){
               list.push(data);
-              responses++;
               { pushed=true; callback(list); }
           });
       } else {
@@ -202,8 +201,9 @@ var Entries = function () {
         } else {
           parseRowers(params.rower, function(parsedRowers){
 	          //utworzenie obiektu
+	          console.log(params.coachList);
 	          self.parseCoaches(params.coachList,function(list){ 
-	            var entryObj = geddy.model.Entry.create({rower:parsedRowers, event:self.event, competition:self.competition, user:self.user,coachList:params.coachList});
+	            var entryObj = geddy.model.Entry.create({rower:parsedRowers, event:self.event, competition:self.competition, user:self.user,coachList:list});
 	            entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
 	          });
           });
