@@ -5,7 +5,8 @@ var Rower = function () {
     lastName: {type: 'string'},
     firstName: {type: 'string'},
     club: {type: 'string'},
-    sms: { type: 'string' }
+    sms: { type: 'string' },
+    birthDate: { type: 'string' }
   });
 
   /*

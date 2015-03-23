@@ -16,7 +16,7 @@
 <div class="panel panel-default" id="<%= competitions[i].id %>">
     <div class="panel-heading">
       <%= competitions[i].number %> - <%= competitions[i].competition.name %>
-      <% if((event.getStatus()=="active")&&(!user.isLockedOut)){ %>
+      <% if(((event.getStatus()=="active")&&(!user.isLockedOut))||(user.isAdmin)){ %>
         <%- linkTo("Dodaj nowe", '/entries/'+event.id+'/'+competitions[i].competition.id,
           {class:'btn btn-primary btn-xs pull-right', style:'margin-right: 10px; margin-bottom: 10px;'}); 
         %>

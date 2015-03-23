@@ -7,6 +7,8 @@
 <% if(user.isAdmin) { %>
 <form id="event-form" class="form-horizontal" action="/events/<%= params.id %>?_method=PUT" method="POST">
     <%- contentTag('button', 'Usuń', {type: 'submit', formaction: '/events/' + params.id + '?_method=DELETE', formmethod: 'POST', class: 'btn pull-right btn-danger', style: 'margin-right: 10px;'}) %>
+    <%- linkTo('Eksportuj licencje', '/rowers/export/', {class: 'btn pull-right btn-success', style: 'margin-right: 10px;'}); %>
+    <%- linkTo('Eksportuj zgłoszenia', '/entries/export/', {class: 'btn pull-right btn-success', style: 'margin-right: 10px;'}); %>
 </form> <% } %>
 
 <% if(event.getStatus() == "active") { %>

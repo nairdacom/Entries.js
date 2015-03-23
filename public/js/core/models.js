@@ -258,7 +258,9 @@ var Rower = function () {
     licenceNo: {type: 'string'},
     lastName: {type: 'string'},
     firstName: {type: 'string'},
-    club: {type: 'string'}
+    club: {type: 'string'},
+    sms: { type: 'string' },
+    birthDate: { type: 'string' }
   });
 
   /*

@@ -1,7 +1,7 @@
 <%   
-  function coachChecked(currentCID, coachList){
+  function coachChecked(currentLicNo, coachList){
       for(var i=0; i<coachList.length; i++){
-        if(currentCID == coachList[i].id) return " checked ";
+        if(currentLicNo == coachList[i].licenceNo) return " checked ";
       }
       return "";
   }
@@ -56,7 +56,7 @@
                     <td>
                         <select name="rower" class="form-control">
                             <% for (var z=0; z<rowers.length; z++) { %>
-                            <option <% if(rowersList[i-1].id == rowers[z].id){ %> selected <% } %> value="<%= rowers[z].id %>">
+                            <option <% if(rowersList[i-1].licenceNo == rowers[z].licenceNo){ %> selected <% } %> value="<%= rowers[z].id %>">
                                 <%= rowers[z].lastName + " " + rowers[z].firstName + " | " + rowers[z].licenceNo %>
                             </option>
                             <% } %>
@@ -75,7 +75,7 @@
         <div class="panel-body">
             <div class="scroll-wrapper">
                 <% for (var i=0; i<coachList.length; i++) { %>
-                    <input type="checkbox" <% if((coaches!== undefined)&&(coaches!==null)){ %><%= coachChecked(coachList[i].id,coaches) %><% } %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
+                    <input type="checkbox" <% if((coaches!== undefined)&&(coaches!==null)){ %><%= coachChecked(coachList[i].licenceNo,coaches) %><% } %> name="coachList" value="<%= coachList[i].id %>" id="<%= coachList[i].id %>" />
                     <label for="<%= coachList[i].id %>" >
                         <%= coachList[i].licenceNo + " | " + coachList[i].lastName + " " + coachList[i].firstName %>
                     </label><br/>

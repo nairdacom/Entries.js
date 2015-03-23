@@ -88,8 +88,18 @@ var Rowers = function () {
        }
        self.redirect('/rowers');
      });
-     
-     
+  }
+  
+  this.export = function(req, resp, params) {
+	  var self = this;
+	  geddy.model.Rower.all(function(err,rowers){
+		  var outputString = "";
+		  for( var i = 0; i< rowers.length; i++){
+			  outputString += rowers[i].licenceNo + ";" + rowers[i].lastName + ";" + rowers[i].firstName + ";" + rowers[i].club + ";" + rowers[i].birthDate + ";\r\n";
+		  }
+		  self.output(200, {'Content-Type': 'text/csv; charset=utf-8', 'Content-Disposition': 'attachment; filename="licencje.csv"'},outputString);
+		  self.respondWith(req);
+	  });
   }
     
   this.edit = function (req, resp, params) {
