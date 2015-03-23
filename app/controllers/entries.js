@@ -54,7 +54,6 @@ var Entries = function () {
          for(var z = 0; z< data.length; z++){
            if ( (data[z].event!==null) && (data[z].event.id == params.eventId)){
 	         var comparedClubs = compareClubs(data[z],self.user.club);
-	         console.log(comparedClubs);
              if((data[z].user.club == self.user.club) || (self.user.isAdmin) || (comparedClubs == true)) { self.entriesArr.push(data[z]); } 
            }
          }
@@ -85,7 +84,7 @@ var Entries = function () {
          for(var z = 0; z< data.length; z++){
            if((data[z].event != null)&&(typeof data[z]!==undefined)){
              if(data[z].event.id == params.eventId){
-               if((data[z].user.club == self.user.club) || (self.user.isAdmin)) { self.entriesArr.push(data[z]); } 
+               /*if((data[z].user.club == self.user.club) || (self.user.isAdmin))*/ { self.entriesArr.push(data[z]); } 
              }
            }
          }
