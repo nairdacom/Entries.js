@@ -1,4 +1,4 @@
-[Sat, 21 Mar 2015 12:41:52 GMT] INFO Server starting with config: {
+[Mon, 23 Mar 2015 21:20:30 GMT] INFO Server starting with config: {
   "environment": "production",
   "workers": 2,
   "port": 4000,
@@ -91,6 +91,6 @@
   },
   "secret": "Cg4VQl0CdiTMPLXsOCQPNKgbnPDEPC5KcSqCf8uf7Rla7uTBm6G5vG9hQXU6kx1wGbl8m0YuP1n0uFESASKrTMTS9d7yNkGAFgthS7ScF4LwNOs59FdUKz1IDPctDe4m"
 }
-[Sat, 21 Mar 2015 12:41:52 GMT] INFO Creating 2 worker processes.
-[Sat, 21 Mar 2015 12:41:54 GMT] INFO Server worker running in production on port 4000 with a PID of: 5617
-[Sat, 21 Mar 2015 12:41:54 GMT] INFO Server worker running in production on port 4000 with a PID of: 5618
+[Mon, 23 Mar 2015 21:20:30 GMT] INFO Creating 2 worker processes.
+[Mon, 23 Mar 2015 21:20:32 GMT] INFO Server worker running in production on port 4000 with a PID of: 8536
+[Mon, 23 Mar 2015 21:20:32 GMT] INFO Server worker running in production on port 4000 with a PID of: 8537

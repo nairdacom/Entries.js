@@ -18,9 +18,9 @@ var Entries = function () {
   }
   
   function compareClubs(entry,club){
-	  entry.rower.forEach(function(rower){
-		  if(rower.club == club) return true;
-	  });
+	  for(var i =0; i<entry.rower.length; i++){
+		  if(entry.rower[i].club === club) return true;
+	  }
 	  return false;
   }
   
@@ -53,7 +53,9 @@ var Entries = function () {
        geddy.model.Entry.all(function(err,data){
          for(var z = 0; z< data.length; z++){
            if ( (data[z].event!==null) && (data[z].event.id == params.eventId)){
-             if((data[z].user.club == self.user.club) || (self.user.isAdmin) || compareClubs(data[z],self.user.club)) { self.entriesArr.push(data[z]); } 
+	         var comparedClubs = compareClubs(data[z],self.user.club);
+	         console.log(comparedClubs);
+             if((data[z].user.club == self.user.club) || (self.user.isAdmin) || (comparedClubs == true)) { self.entriesArr.push(data[z]); } 
            }
          }
         self.event.getEventRecords(function(err,evRecs){ 
