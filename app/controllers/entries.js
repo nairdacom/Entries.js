@@ -16,6 +16,14 @@ var Entries = function () {
     if (a.lastName > b.lastName) return 1;
     return 0;
   }
+  
+  function compareClubs(entry,club){
+	  entry.rower.forEach(function(rower){
+		  if(rower.club == club) return true;
+	  });
+	  return false;
+  }
+  
   this.createCoachList = function(clubOnly,callback){
       if((!clubOnly)||(this.user.isAdmin)||(this.user.club.substr(0,3)=="SMS")){
         geddy.model.Rower.all(function(err,data){
@@ -45,7 +53,7 @@ var Entries = function () {
        geddy.model.Entry.all(function(err,data){
          for(var z = 0; z< data.length; z++){
            if ( (data[z].event!==null) && (data[z].event.id == params.eventId)){
-             if((data[z].user.club == self.user.club) || (self.user.isAdmin)) { self.entriesArr.push(data[z]); } 
+             if((data[z].user.club == self.user.club) || (self.user.isAdmin) || compareClubs(data[z],self.user.club)) { self.entriesArr.push(data[z]); } 
            }
          }
         self.event.getEventRecords(function(err,evRecs){ 
