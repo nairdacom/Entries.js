@@ -2,8 +2,8 @@
     <h3>Wydarzenia</h3>
     <p>Przeglądaj wydarzenia. Wybierz interesujące, aby dokonać zgłoszeń.</p>
 </div>
-<% if(user.isLockedOut){ %><div class="alert alert-danger">Twoje konto zostało zablokowane. Blokada spowodowana jest nieuregulowaniem należności za zgłoszenia.</div><% } %>
-<% if(user.isAdmin) { %> <%- linkTo('Dodaj wydarzenie', addEventPath, {class: 'btn btn-lg btn-primary pull-right'}); %> <% } %>
+<% if(typeof user!== 'undefined'){ if(user.isLockedOut){ %><div class="alert alert-danger">Twoje konto zostało zablokowane. Blokada spowodowana jest nieuregulowaniem należności za zgłoszenia.</div><% } %>
+<% if(user.isAdmin) { %> <%- linkTo('Dodaj wydarzenie', addEventPath, {class: 'btn btn-lg btn-primary pull-right'}); %> <% }} %>
 <div class="panel panel-default" style="width:75%;" >
   <div class="panel-heading">Oznaczenia zgłoszeń</div>
   <div class="panel-body">

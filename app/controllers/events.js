@@ -1,5 +1,11 @@
 var Events = function () {
-  this.before(require('../helpers/passport').requireAuth);
+  var self = this;
+  //this.before(require('../helpers/passport').requireAuth);
+  
+  function checkLogin(){
+	  if( typeof self.session.get('user') === 'undefined' ) self.redirect('/login');
+  }
+  
   this.respondsWith = ['html', 'json', 'xml', 'js', 'txt'];
 
   this.index = function (req, resp, params) {
@@ -8,13 +14,13 @@ var Events = function () {
     geddy.model.Event.all( {  }, { sort: { eventStart:'desc' } }, function(err, events) {
       for(var i =0; i<events.length; i++){
           events[i].statusColor = events[i].getStatusColor();
-          console.log(events[i]);
       }
       self.respond({events:events, params:params});
     });
   };
 
   this.add = function (req, resp, params) {
+	checkLogin();
     var self = this;
     this.user = this.session.get('user');
     if(!this.user.isAdmin) this.redirect('/');
@@ -60,6 +66,7 @@ var Events = function () {
   };
 
   this.show = function (req, resp, params) {
+	  
     this.user = this.session.get('user');
     var self = this;
 
@@ -83,6 +90,7 @@ var Events = function () {
   };
 
   this.edit = function (req, resp, params) {
+	checkLogin();
     this.user = this.session.get('user');
     if(!this.user.isAdmin) this.redirect('/');
     var self = this;
@@ -124,6 +132,7 @@ var Events = function () {
   };
 
   this.remove = function (req, resp, params) {
+	checkLogin();
     var self = this;
 
     geddy.model.Event.first(params.id, function(err, event) {

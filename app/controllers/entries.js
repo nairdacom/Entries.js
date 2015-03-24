@@ -1,5 +1,5 @@
 var Entries = function () {
-  this.before(require('../helpers/passport').requireAuth);
+  //this.before(require('../helpers/passport').requireAuth);
   this.respondsWith = ['html', 'json', 'xml', 'js', 'txt'];
   this.event = null;
   this.competitions = new Array();
@@ -10,6 +10,10 @@ var Entries = function () {
   this.coachList = new Array();
   this.coaches = undefined;
   var self = this;
+  
+  function checkLogin(){
+	  if( typeof self.session.get('user') === 'undefined' ) self.redirect('/login');
+  }
   
   function compareLicence(a,b) {
     if (a.lastName < b.lastName) return -1;
@@ -47,6 +51,7 @@ var Entries = function () {
       
   }
   this.index = function (req, resp, params) {
+	checkLogin();
     this.user = this.session.get('user');
     geddy.model.Event.first(params.eventId, function(err,data){
        self.event = data;
@@ -67,10 +72,12 @@ var Entries = function () {
   };
 
   this.add = function (req, resp, params) {
+	checkLogin();
     this.respond({params: params});
   };
 
   this.create = function (req, resp, params) {
+	checkLogin();
     // Save the resource, then display index page
     this.redirect({controller: this.name});
   };
@@ -99,6 +106,7 @@ var Entries = function () {
   };
 
   this.edit = function (req, resp, params) {
+	checkLogin();
     this.user = this.session.get('user');
     var selfFunc = this, entry = null;
     self.updating = true;
@@ -129,17 +137,20 @@ var Entries = function () {
   };
 
   this.update = function (req, resp, params) {
+	checkLogin();
     // Save the resource, then display the item page
     this.redirect({controller: this.name, id: params.id});
   };
 
   this.remove = function (req, resp, params) {
+	checkLogin();
     geddy.model.Entry.remove(params.entryId,function(err,data){
       self.redirect("/entries/" + params.eventId);
     });  
   };
     
   this.newEntry = function (req, resp, params) {
+	  checkLogin();
       this.user = this.session.get('user');
       geddy.model.Event.first(params.eventId, function(err,data){
         self.event = data;
@@ -190,6 +201,7 @@ var Entries = function () {
   };
     
   this.createEntry = function (req, resp, params) {
+	checkLogin();
     // event tworzenia nowego zgłoszenia
     //pobranie wszystkich danych
     this.user = this.session.get('user');
@@ -237,6 +249,7 @@ var Entries = function () {
   }
   
   this.updateEntry = function (req, resp, params) {
+	checkLogin();
     //usuniecie dotychczasowego zgloszenia
     geddy.model.Entry.remove(params.entryId);
       
