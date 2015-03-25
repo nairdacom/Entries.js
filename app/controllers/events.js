@@ -152,6 +152,56 @@ var Events = function () {
       }
     });
   };
+  
+  this.export = fuction(req, resp, params){
+	  var outputString = ',,"';
+	  var sepa = '","';
+	  var self = this;
+	  var commas = 48;
+	  geddy.model.Event.first(params.eventId, function(err,data){
+       	self.event = data;
+	   	geddy.model.Entry.all(function(err,data){
+         	for(var z = 0; z< data.length; z++){
+		 		if((data[z].event != null)&&(typeof data[z]!==undefined)){
+		 			if(data[z].event.id == params.eventId) self.entriesArr.push(data[z]); 
+           		}
+         	}
+	        self.event.getEventRecords(function(err,evRecs){ 
+	        	self.competitions  = evRecs; 
+	            self.competitions.sort(function(a, b) {return a.number - b.number;});
+	            //self.respond({params: params}); 
+	            
+	            for(var i = 0; i< competitions.length; i++) {
+		            var compNumber = competitions[i].number;
+		            var entryNo = 1; 
+		            for(var z=0; z<entriesArr.length; z++) { 
+			            if(entriesArr[z].competition.name == competitions[i].competition.name) {
+				        	outputString += entryNo + sep + competitions[i].number + sep;
+				        	entryNo++;
+				        	commas -= 2;
+				        	for(var zNo = 0; zNo<entriesArr[z].rower.length; zNo++) {
+					        	outputString += entriesArr[z].rower[zNo].licenceNo + sep + "z" + sep;
+					        	commas -= 2;
+					        }
+					        if (entriesArr[z].coachList !== undefined) { 
+						        for(var zNo = 0; zNo<entriesArr[z].coachList.length; zNo++) {
+							        outputString += entriesArr[z].coachList[zNo].licenceNo + sep + "t" + sep;
+							        commas -= 2;
+							    }
+							}
+							//koniec wiersza - dodać przecinki i znak nowej linii
+							for(var comIndex = 0; comIndex<commas; comIndex++){ outputString += ","; }
+							outputString += "\r\n";
+				        }
+			        }
+		        }
+		        //odpowiedź serwera
+		        self.output(200, {'Content-Type': 'text/csv; charset=utf-8', 'Content-Disposition': 'attachment; filename="zgloszenia.csv"'},outputString);
+				self.respondWith(req);
+	        });
+       });
+    });
+  };
 
 };
 

@@ -285,24 +285,7 @@ var Entries = function () {
         }
       });   
     });
-    
-    
-    
-      /*
-    if(typeof params.coachList === "string"){ 
-        geddy.model.Rower.first(params.coachList, function(err,data){ selfFunc.coaches.push(data); }); 
-    } else { 
-        for(var cNo=0; cNo<params.coachList.length; cNo++){
-        geddy.model.Rower.first(params.coachList[cNo], function(err,data){ selfFunc.coaches.push(data); }); }}
-    
-    //utworzenie obiektu
-    var entryObj = geddy.model.Entry.create({rower:selfFunc.rowers, event:self.event, competition:self.competition, user:this.user, coachList:selfFunc.coaches});
-    entryObj.save();
-      
-    // przekierowanie
-    this.redirect("/entries/"+self.event.id);*/
   }
-
 };
 
 exports.Entries = Entries;

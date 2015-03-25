@@ -68,6 +68,7 @@ router.post('/entries/:eventId/:competitionId/:entryId/updateEntry').to('Entries
 
 router.get('/users/:userId/lockChange').to('Users.lockChange');
 router.get('/rowers/export').to('Rowers.export');
+router.get('/entries/export').to('Events.export');
 
 router.resource('users');
 router.resource('competitions');
