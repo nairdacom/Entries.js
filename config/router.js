@@ -58,6 +58,7 @@ router.get('/auth/yammer/callback').to('Auth.yammerCallback');
 router.get('/auth/google').to('Auth.google');
 router.get('/auth/google/callback').to('Auth.googleCallback');
 
+router.get('/entries/:eventId/export').to('Events.export');
 router.get('/entries/:eventId/show').to('Entries.show');
 router.get('/entries/:eventId/:entryId/remove').to('Entries.remove');
 router.get('/entries/:eventId/:entryId/edit').to('Entries.edit');
@@ -68,7 +69,7 @@ router.post('/entries/:eventId/:competitionId/:entryId/updateEntry').to('Entries
 
 router.get('/users/:userId/lockChange').to('Users.lockChange');
 router.get('/rowers/export').to('Rowers.export');
-router.get('/entries/export').to('Events.export');
+router.get('/entries/:eventId/export').to('Events.export');
 
 router.resource('users');
 router.resource('competitions');

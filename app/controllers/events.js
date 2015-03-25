@@ -1,6 +1,8 @@
 var Events = function () {
   var self = this;
-  //this.before(require('../helpers/passport').requireAuth);
+  this.entriesArr = new Array();
+  this.competitions = undefined;
+    //this.before(require('../helpers/passport').requireAuth);
   
   function checkLogin(){
 	  if( typeof self.session.get('user') === 'undefined' ) self.redirect('/login');
@@ -153,11 +155,11 @@ var Events = function () {
     });
   };
   
-  this.export = fuction(req, resp, params){
-	  var outputString = ',,"';
-	  var sepa = '","';
+  this.export = function(req, resp, params){
+	  var outputString = '';
+	  var sep = '","';
 	  var self = this;
-	  var commas = 48;
+	  //var commas = 48;
 	  geddy.model.Event.first(params.eventId, function(err,data){
        	self.event = data;
 	   	geddy.model.Entry.all(function(err,data){
@@ -171,21 +173,23 @@ var Events = function () {
 	            self.competitions.sort(function(a, b) {return a.number - b.number;});
 	            //self.respond({params: params}); 
 	            
-	            for(var i = 0; i< competitions.length; i++) {
-		            var compNumber = competitions[i].number;
+	            for(var i = 0; i< self.competitions.length; i++) {
+					var compNumber = self.competitions[i].number;
 		            var entryNo = 1; 
-		            for(var z=0; z<entriesArr.length; z++) { 
-			            if(entriesArr[z].competition.name == competitions[i].competition.name) {
-				        	outputString += entryNo + sep + competitions[i].number + sep;
+		            for(var z=0; z<self.entriesArr.length; z++) { 
+			            if(self.entriesArr[z].competition.name == self.competitions[i].competition.name) {
+				            outputString += ',,"';
+							var commas = 48;
+				        	outputString += entryNo + sep + self.competitions[i].number + sep;
 				        	entryNo++;
 				        	commas -= 2;
-				        	for(var zNo = 0; zNo<entriesArr[z].rower.length; zNo++) {
-					        	outputString += entriesArr[z].rower[zNo].licenceNo + sep + "z" + sep;
+				        	for(var zNo = 0; zNo<self.entriesArr[z].rower.length; zNo++) {
+					        	outputString += self.entriesArr[z].rower[zNo].licenceNo + sep + "z" + sep;
 					        	commas -= 2;
 					        }
-					        if (entriesArr[z].coachList !== undefined) { 
-						        for(var zNo = 0; zNo<entriesArr[z].coachList.length; zNo++) {
-							        outputString += entriesArr[z].coachList[zNo].licenceNo + sep + "t" + sep;
+					        if (self.entriesArr[z].coachList !== undefined) { 
+						        for(var zNo = 0; zNo<self.entriesArr[z].coachList.length; zNo++) {
+							        outputString += self.entriesArr[z].coachList[zNo].licenceNo + sep + "t" + sep;
 							        commas -= 2;
 							    }
 							}
