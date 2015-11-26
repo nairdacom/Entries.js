@@ -4,12 +4,12 @@
   "author": "",
   "dependencies": {
     "jake": "0.5.x",
-    "passport": "0.1.x",
-    "passport-twitter": "0.1.x",
-    "passport-facebook": "0.1.x",
-    "passport-yammer": "0.1.x",
-    "bcrypt": "0.7.x",
-    "mongodb": "1.x",
+    "passport": "x.x.x",
+    "passport-twitter": "x.x.x",
+    "passport-facebook": "x.x.x",
+    "passport-yammer": "x.x.x",
+    "bcrypt": "x.x.x",
+    "mongodb": "x.x",
     "geddy": "0.11.x"
   },
   "devDependencies": {},
