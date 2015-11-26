@@ -38,11 +38,11 @@ var config = {
 , db: {
     mongo: {
       username: 'nairdacom'
-    , dbname: 'entries-js'
+    , dbname: 'heroku_app34321694'
     , prefix: null
     , password: 'GDRKZ27g'
-    , host: 'ds047911.mongolab.com'
-    , port: 47911
+    , host: 'ds049161.mongolab.com'
+    , port: 49161
     }
   }
 , sessions: {
