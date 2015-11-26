@@ -1,4 +1,4 @@
- var passport = require('../helpers/passport');
+var passport = require('../helpers/passport');
 
 var Auth = function () {
   geddy.mixin(this, passport.actions);
