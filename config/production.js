@@ -39,7 +39,7 @@ var config = {
     mongo: {
       username: 'nairdacom'
     , dbname: 'entries-js'
-    , prefix: 'data/'
+    , prefix: null
     , password: 'GDRKZ27g'
     , host: 'ds047911.mongolab.com'
     , port: 47911
