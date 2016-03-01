@@ -69,10 +69,9 @@ var Competitions = function () {
   };
 
   this.update = function (req, resp, params) {
-    if(!this.user.isAdmin) this.redirect('/');
-    var self = this;
     this.user = this.session.get('user');
     if(!this.user.isAdmin) this.redirect('/');
+    var self = this;
     geddy.model.Competition.first(params.id, function(err, competition) {
       if (err) {
         throw err;
