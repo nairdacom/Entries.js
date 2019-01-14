@@ -9,6 +9,7 @@ var Entries = function () {
   this.updating = false;
   this.coachList = new Array();
   this.coaches = undefined;
+  this.estTime = null;
   var self = this;
   
   function checkLogin(){
