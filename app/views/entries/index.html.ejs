@@ -29,6 +29,7 @@
                 <th>Zawodnicy</th>
                 <th>Data zgłoszenia / zmiany</th>
                 <th>Zgłaszający</th>
+                <th>Dekl. czas</th>
                 <th>&nbsp;</th>
             </tr>
             <% var no = 1; for(var z=0; z<entriesArr.length; z++) { %>
@@ -42,6 +43,7 @@
                 </td>
                 <td><%= entriesArr[z].createdAt %></td>
                 <td><%= entriesArr[z].user.givenName+ " " +entriesArr[z].user.familyName %></td>
+                <td><%= entriesArr[z].estTime %></td>
                 <% if(((event.getStatus()=="active") || (event.getStatus()=="onlyModify")) && (!user.isLockedOut)){ %> 
                 <td style="text-align:right;">
                     <a href="/entries/<%= event.id %>/<%= entriesArr[z].id %>/edit" class="btn btn-success" style="margin-right:10px;">

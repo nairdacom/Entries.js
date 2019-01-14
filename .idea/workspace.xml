@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c7785278-a206-4281-ae32-3f6bd3e60417" name="Default" comment="EST Time in entry list view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/entries.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/entries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/entries/index.html.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/entries/index.html.ejs" afterDir="false" />
     </list>
     <ignored path="Entries.js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/entries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="280" column="178" selection-start-line="280" selection-start-column="178" selection-end-line="280" selection-end-column="178" />
+            <state relative-caret-position="314">
+              <caret line="128" column="61" lean-forward="true" selection-start-line="128" selection-start-column="61" selection-end-line="128" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -60,8 +60,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/entries/new_entry.html.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="109" />
+            <state relative-caret-position="325">
+              <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/entries/index.html.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="45" column="53" lean-forward="true" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -81,6 +90,7 @@
     <findStrings>
       <find>entriesarr</find>
       <find>new_en</find>
+      <find>edit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -96,8 +106,9 @@
         <option value="$PROJECT_DIR$/app/models/entry.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/views/entries/show.html.ejs" />
-        <option value="$PROJECT_DIR$/app/views/entries/new_entry.html.ejs" />
         <option value="$PROJECT_DIR$/app/controllers/entries.js" />
+        <option value="$PROJECT_DIR$/app/views/entries/new_entry.html.ejs" />
+        <option value="$PROJECT_DIR$/app/views/entries/index.html.ejs" />
       </list>
     </option>
   </component>
@@ -202,7 +213,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1448545763850</updated>
-      <workItem from="1547473966275" duration="1890000" />
+      <workItem from="1547473966275" duration="2403000" />
     </task>
     <task id="LOCAL-00001" summary="Entry Model added estTime&#10;New Entry added field for estTime">
       <created>1547474434904</created>
@@ -260,11 +271,25 @@
       <option name="project" value="LOCAL" />
       <updated>1547479536536</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="EST Time in entry list view">
+      <created>1547479912066</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1547479912066</updated>
+    </task>
+    <task id="LOCAL-00010" summary="EST Time in entry list view">
+      <created>1547480300664</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1547480300664</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1890000" />
+    <option name="totallyTimeSpent" value="2403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -403,17 +428,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/entries/new_entry.html.ejs">
+    <entry file="file://$PROJECT_DIR$/app/controllers/entries.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="109" />
+        <state relative-caret-position="314">
+          <caret line="128" column="61" lean-forward="true" selection-start-line="128" selection-start-column="61" selection-end-line="128" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/entries.js">
+    <entry file="file://$PROJECT_DIR$/app/views/entries/new_entry.html.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="280" column="178" selection-start-line="280" selection-start-column="178" selection-end-line="280" selection-end-column="178" />
+        <state relative-caret-position="325">
+          <caret line="76" column="22" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/entries/index.html.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="45" column="53" lean-forward="true" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
         </state>
       </provider>
     </entry>
