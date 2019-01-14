@@ -218,7 +218,7 @@ var Entries = function () {
             selfFunc.rowers.push(data);
             //utworzenie obiektu
             self.parseCoaches(params.coachList, function(list){
-                var entryObj = geddy.model.Entry.create({rower:selfFunc.rowers, event:self.event, competition:self.competition, user:self.user, coachList:list});
+                var entryObj = geddy.model.Entry.create({rower:selfFunc.rowers, event:self.event, competition:self.competition, user:self.user, coachList:list, estTime:params.estTime});
                 entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
             });
           });
@@ -227,7 +227,7 @@ var Entries = function () {
 	          //utworzenie obiektu
 	          console.log(params.coachList);
 	          self.parseCoaches(params.coachList,function(list){ 
-	            var entryObj = geddy.model.Entry.create({rower:parsedRowers, event:self.event, competition:self.competition, user:self.user,coachList:list});
+	            var entryObj = geddy.model.Entry.create({rower:parsedRowers, event:self.event, competition:self.competition, user:self.user,coachList:list, estTime:params.estTime});
 	            entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
 	          });
           });
@@ -270,7 +270,7 @@ var Entries = function () {
             selfFunc.rowers.push(data);
             //utworzenie obiektu
             self.parseCoaches(params.coachList, function(list){
-                var entryObj = geddy.model.Entry.create({rower:selfFunc.rowers, event:self.event, competition:self.competition, user:self.user, coachList:list});
+                var entryObj = geddy.model.Entry.create({rower:selfFunc.rowers, event:self.event, competition:self.competition, user:self.user, coachList:list, estTime:params.estTime});
                 entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
             });
           });
@@ -278,7 +278,7 @@ var Entries = function () {
           parseRowers(params.rower, function(parsedRowers){
 	          //utworzenie obiektu
 	          self.parseCoaches(params.coachList,function(list){ 
-	            var entryObj = geddy.model.Entry.create({rower:parsedRowers, event:self.event, competition:self.competition, user:self.user,coachList:list});
+	            var entryObj = geddy.model.Entry.create({rower:parsedRowers, event:self.event, competition:self.competition, user:self.user,coachList:list, estTime:params.estTime});
 	            entryObj.save(function(err,dat){ self.redirect("/entries/"+self.event.id); });
 	          });
           });
