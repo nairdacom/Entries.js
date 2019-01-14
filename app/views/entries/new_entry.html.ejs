@@ -68,9 +68,13 @@
 
             </table>
 
-            <div class="form-group col-md-6">
-                <label for="estTime" class="control-label">Prognozowany czas (ERGO)</label>
-                <%- contentTag('input', data.estTime, {type:'text', class:'form-control', name:'estTime'}) %>
+            <div class="form-group row">
+                <div class="col-xs-5">
+                    <label for="estTime" class="control-label">Prognozowany czas (ERGO)</label>
+                </div>
+                <div class="col-xs-7">
+                    <%- contentTag('input', estTime, {type:'text', class:'form-control', name:'estTime'}) %>
+                </div>
             </div>
 
         </div>

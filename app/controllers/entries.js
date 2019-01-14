@@ -116,6 +116,7 @@ var Entries = function () {
         self.competition = data.competition;
         self.rowersList = data.rower;
         self.coaches = data.coachList;
+        self.estTime = data.estTime;
         if ((self.user.isAdmin) || (!self.event.clubOnly) || (self.user.club.substr(0,3)=="SMS")){
           self.createCoachList(false,function(){
             geddy.model.Rower.all(null, {sort:{lastName:'asc'}},function(err,data){
