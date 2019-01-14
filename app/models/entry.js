@@ -5,7 +5,8 @@ var Entry = function () {
     event: {type: 'object'},
     competition: {type: 'object'},
     user: {type: 'object'},
-    coachList: {type: 'object'}
+    coachList: {type: 'object'},
+    estTime: {type: 'string'}
   });
 
   /*
