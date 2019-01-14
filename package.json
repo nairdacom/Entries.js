@@ -1,6 +1,6 @@
 {
   "name": "Entries.js",
-  "version": "1.0.65",
+  "version": "1.0.67",
   "author": "",
   "dependencies": {
     "jake": "0.5.x",
@@ -15,6 +15,6 @@
   "devDependencies": {},
   "engines": {
     "node": "0.8.x",
-    "npm": "1.x"
+    "npm": "1.2.30"
   }
 }
