@@ -15,6 +15,7 @@
                 <th>Zawodnicy</th>
                 <th>Trenerzy</th>
                 <th>Zgłaszający</th>
+                <th>Dekl. czas</th>
             </tr>
             <% var no = 1; for(var z=0; z<entriesArr.length; z++) { %>
             <% if(entriesArr[z].competition.name == competitions[i].competition.name) { %>
@@ -36,6 +37,11 @@
                       <%= entriesArr[z].user.familyName + " " + entriesArr[z].user.givenName %>
                     <% } else { %>
                       Administrator
+                    <% } %>
+                </td>
+                <td>
+                    <% if(entriesArr[z].estTime != "") { %>
+                        <%= entriesArr[z].estTime %>
                     <% } %>
                 </td>
             </tr>
