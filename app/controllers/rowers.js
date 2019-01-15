@@ -81,12 +81,14 @@ var Rowers = function () {
      geddy.request({url: url, method: 'GET'}, function (err, data) {
        if (err) { throw err; }
        rowers = JSON.parse(data);
-       if (rowers.length > 0) { geddy.model.Rower.remove({}); }
-       for(var i=0; i<rowers.length; i++){
-         var rower = geddy.model.Rower.create(rowers[i]);
-         rower.save();
-       }
-       self.redirect('/rowers');
+       if (rowers.length > 0) { geddy.model.Rower.remove({}, function(err){
+         for(var i=0; i<rowers.length; i++){
+           var rower = geddy.model.Rower.create(rowers[i]);
+           rower.save(function(err,data){
+             if (i == rowers.length-1) self.redirect('/rowers');
+           });
+         }
+       }); }
      });
   }
   
