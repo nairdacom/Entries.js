@@ -82,10 +82,12 @@ var Rowers = function () {
        if (err) { throw err; }
        rowers = JSON.parse(data);
        if (rowers.length > 0) { geddy.model.Rower.remove({}, function(err){
+         var savedRowers = 0;
          for(var i=0; i<rowers.length; i++){
            var rower = geddy.model.Rower.create(rowers[i]);
            rower.save(function(err,data){
-             if (i == rowers.length-1) self.redirect('/rowers');
+             savedRowers++;
+             if (savedRowers === rowers.length-1) self.redirect('/rowers');
            });
          }
        }); }
