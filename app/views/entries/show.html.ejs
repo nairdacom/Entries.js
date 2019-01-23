@@ -24,7 +24,8 @@
                 <td><%= entriesArr[z].rower[0].club %></td>
                 <td>
                     <% for(var zNo = 0; zNo<entriesArr[z].rower.length; zNo++) { %>
-                        <%= entriesArr[z].rower[zNo].lastName + " " + entriesArr[z].rower[zNo].firstName + ", "  %>
+                    <% var birthDate = entriesArr[z].rower[zNo].birthDate.length > 6 ? " (" + entriesArr[z].rower[zNo].birthDate.slice(-4) + ")" : ""; %>
+                        <%= entriesArr[z].rower[zNo].lastName + " " + entriesArr[z].rower[zNo].firstName + birthDate + ", "  %>
                     <% } %>
                 </td>
                 <td>
