@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7785278-a206-4281-ae32-3f6bd3e60417" name="Default" comment="Entries list birth year">
+    <list default="true" id="c7785278-a206-4281-ae32-3f6bd3e60417" name="Default" comment="MASATERS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_datastore.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_session_store.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/events/show.html.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/events/show.html.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/layout_header.html.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/layout_header.html.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entries-js (zrzut bazy).sh" beforeDir="false" />
     </list>
     <ignored path="Entries.js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +25,23 @@
         <entry file="file://$PROJECT_DIR$/app/views/events/show.html.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
               <folding>
+                <element signature="e#134#169#0#HTML" expanded="true" />
                 <element signature="e#333#337#0#HTML" expanded="true" />
                 <element signature="e#336#340#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="706">
+              <caret line="75" column="23" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="23" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -225,7 +234,7 @@
       <workItem from="1555330211138" duration="927000" />
       <workItem from="1558640968261" duration="422000" />
       <workItem from="1559919334902" duration="1172000" />
-      <workItem from="1561754092722" duration="735000" />
+      <workItem from="1561754092722" duration="1072000" />
     </task>
     <task id="LOCAL-00001" summary="Entry Model added estTime&#10;New Entry added field for estTime">
       <created>1547474434904</created>
@@ -332,11 +341,25 @@
       <option name="project" value="LOCAL" />
       <updated>1548244397119</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Entries list birth year">
+      <created>1561756162407</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1561756162407</updated>
+    </task>
+    <task id="LOCAL-00017" summary="MASATERS">
+      <created>1561756379370</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1561756379370</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7580000" />
+    <option name="totallyTimeSpent" value="7917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="980" extended-state="6" />
@@ -373,7 +396,8 @@
     <MESSAGE value="EST Time in edit entry list view" />
     <MESSAGE value="Rowers IMport FIX" />
     <MESSAGE value="Entries list birth year" />
-    <option name="LAST_COMMIT_MESSAGE" value="Entries list birth year" />
+    <MESSAGE value="MASATERS" />
+    <option name="LAST_COMMIT_MESSAGE" value="MASATERS" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Procfile">
@@ -570,11 +594,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="706">
+          <caret line="75" column="23" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/events/show.html.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
           <folding>
+            <element signature="e#134#169#0#HTML" expanded="true" />
             <element signature="e#333#337#0#HTML" expanded="true" />
             <element signature="e#336#340#0#HTML" expanded="true" />
           </folding>
