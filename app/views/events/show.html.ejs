@@ -3,11 +3,11 @@
     <p>Szczegóły wybranego wydarzenia.</p>
 </div>
 
-<% if(event.id == 'FF07B78C-44E4-434F-8E22-5E6D4D3F2ED6') { %>
+
 <div class="alert-danger">
     <p>Jeśli jesteś zawodnikiem Masters i nie posiadasz licencji PZTW, a chcesz wystartować w zawodach - skorzystaj z <a href="https://forms.gle/ou3HRpR48PFJYzd56">formularza zgłoszeniowego &gt;&gt;</a></p>
 </div>
-<% } %>
+
 
 <h4 class="page-header"><%= event.name %></h4>
 <%- linkTo('Powrót', eventPath(''), {class: 'btn pull-right btn-primary'}); %>
