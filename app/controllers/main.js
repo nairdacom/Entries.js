@@ -20,6 +20,7 @@ var strategies = require('../helpers/passport/strategies')
 
 var Main = function () {
   this.index = function (req, resp, params) {
+    resp.redirect('http://zgloszenia.wioslarstwo.poznan.pl');
     var self = this
       , User = geddy.model.User;
     User.first({id: this.session.get('userId')}, function (err, user) {
