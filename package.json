@@ -10,7 +10,7 @@
     "passport-yammer": "x.x.x",
     "bcrypt": "x.x.x",
     "mongodb": "x.x",
-    "geddy": "0.11.x"
+    "geddy": "14.0.x"
   },
   "devDependencies": {},
   "engines": {
